@@ -157,64 +157,95 @@
 .praktyki-card h3 { font-size: clamp(1.125rem,1rem+0.4vw,1.375rem); margin-bottom: 0.5rem; }
 .praktyki-card p  { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
 
-/* ── PCARD — kwadratowe karty uczestników ── */
+/* =============================================
+   PCARD — karty uczestników (uczestnicy.html)
+============================================= */
 .pcard-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(170px, 100%), 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
 }
+
 .pcard {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  background: var(--bg-offset, #F5E2B8);
-  border: 1px solid var(--border, rgba(0,48,73,0.13));
-  border-radius: 1rem;
+  background: var(--bg-offset);
+  border: 2px solid var(--border);
+  border-radius: var(--r-xl);
   overflow: hidden;
-  transition: box-shadow 200ms, transform 200ms;
+  transition: box-shadow var(--tr), transform var(--tr), border-color var(--tr);
 }
-.pcard:hover { box-shadow: 0 8px 28px rgba(0,48,73,0.14); transform: translateY(-4px); }
-.pcard--navy { background: rgba(0,48,73,0.06); border-color: rgba(0,48,73,0.18); }
-.pcard--red  { background: rgba(192,18,31,0.06); border-color: rgba(192,18,31,0.18); }
-.pcard--dark { background: rgba(0,25,40,0.88); border-color: rgba(255,255,255,0.12); }
+.pcard:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: var(--blue);
+}
+
+.pcard--navy { border-color: rgba(0,48,73,0.25); }
+.pcard--navy:hover { border-color: var(--navy); }
+
+.pcard--red { border-color: rgba(120,0,0,0.25); }
+.pcard--red:hover { border-color: var(--red); }
+
+.pcard--dark { border-color: rgba(253,240,213,0.15); }
+.pcard--dark:hover { border-color: var(--blue); }
 
 .pcard-img {
-  width: 100%;
+  position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: var(--blue-light, #d4e8f5);
-  position: relative;
+  background: var(--bg-offset);
 }
-.pcard--red  .pcard-img { background: rgba(192,18,31,0.08); }
-.pcard--dark .pcard-img { background: rgba(255,255,255,0.07); }
-
 .pcard-img img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center top;
-  display: block;
+  object-position: top center;
+  transition: transform .4s ease;
+}
+.pcard:hover .pcard-img img {
+  transform: scale(1.04);
 }
 .pcard-fallback {
   display: none;
-  width: 100%; height: 100%;
-  align-items: center; justify-content: center;
-  color: var(--blue-dark, #3a6f8f);
-  position: absolute; inset: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-faint);
+  background: var(--bg-offset);
 }
-.pcard--dark .pcard-fallback { color: rgba(255,255,255,0.4); }
 
 .pcard-info {
-  padding: 0.75rem 1rem;
-  display: flex; flex-direction: column; gap: 2px;
-  text-align: center;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border-top: 1px solid var(--border);
 }
 .pcard-info strong {
-  font-size: 0.9rem; font-weight: 700;
-  color: var(--text, #003049);
-  line-height: 1.3;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text);
 }
-.pcard--dark .pcard-info strong { color: #FDF0D5; }
 .pcard-info span {
-  font-size: 0.78rem; color: var(--text-muted, #3a5568);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
 }
-.pcard--dark .pcard-info span { color: rgba(253,240,213,0.6); }
+
+/* Ciemne tło (sekcja opiekunów) */
+.bg-navy .pcard { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); }
+.bg-navy .pcard:hover { border-color: var(--blue); background: rgba(255,255,255,0.1); }
+.bg-navy .pcard-info { border-top-color: rgba(255,255,255,0.1); }
+.bg-navy .pcard-info strong { color: #FDF0D5; }
+.bg-navy .pcard-info span { color: rgba(253,240,213,0.6); }
+.bg-navy .pcard-fallback { background: rgba(255,255,255,0.05); color: rgba(253,240,213,0.3); }
+
+/* Responsywność */
+@media (max-width: 900px) {
+  .pcard-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .pcard-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 380px) {
+  .pcard-grid { grid-template-columns: 1fr; }
+}
