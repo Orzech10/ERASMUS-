@@ -12,43 +12,62 @@
   <a href="#main" class="skip-link">Przejdź do treści</a>
 
   <!-- NAWIGACJA -->
-  <header class="site-header" id="top">
-    <nav class="nav-inner" aria-label="Główna nawigacja">
-      <a href="#top" class="nav-logo" aria-label="Erasmus+ ZSE Rzeszów">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-          <rect width="36" height="36" rx="8" fill="#780000"/>
-          <text x="18" y="24" font-size="16" font-family="serif" font-weight="700" fill="#FDF0D5" text-anchor="middle">E+</text>
-        </svg>
-        <span>ZSE Rzeszów</span>
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="#home">Strona Główna</a></li>
-        <li><a href="#about">O projekcie</a></li>
-        <li><a href="#goals">Cele projektu</a></li>
-        <li><a href="#stages">Etapy i Oferta</a></li>
-        <li><a href="#gallery">Galeria</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button class="theme-toggle" data-theme-toggle aria-label="Przełącz motyw">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        </button>
-        <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <ul role="list">
-        <li><a href="#home">Strona Główna</a></li>
-        <li><a href="#about">O projekcie</a></li>
-        <li><a href="#goals">Cele projektu</a></li>
-        <li><a href="#stages">Etapy i Oferta</a></li>
-        <li><a href="#gallery">Galeria</a></li>
-      </ul>
-    </div>
-  </header>
+<header class="site-header" id="top">
+  <nav class="nav-inner" aria-label="Główna nawigacja">
+    <a href="index.html" class="nav-logo" aria-label="Erasmus+ ZSE Rzeszów">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <rect width="36" height="36" rx="8" fill="#780000"/>
+        <text x="18" y="24" font-size="16" font-family="serif" font-weight="700" fill="#FDF0D5" text-anchor="middle">E+</text>
+      </svg>
+      <span>ZSE Rzeszów</span>
+    </a>
 
-  <main id="main">
+    <ul class="nav-links" role="list">
+      <li class="has-dropdown">
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+          Praktyki
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <ul class="dropdown-menu" role="list">
+          <li><a href="informatyka.html">Informatyka</a></li>
+          <li><a href="elektronika.html">Elektronika</a></li>
+          <li><a href="automatyka.html">Automatyka</a></li>
+        </ul>
+      </li>
+      <li><a href="uczestnicy.html">Uczestnicy</a></li>
+      <li><a href="aktywnosci.html">Aktywności</a></li>
+      <li><a href="organizatorzy.html">Organizatorzy</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Przełącz motyw">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul role="list">
+      <li class="mobile-has-dropdown">
+        <button class="mobile-dropdown-btn" aria-expanded="false">
+          Praktyki
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <ul class="mobile-submenu" aria-hidden="true">
+          <li><a href="informatyka.html">Informatyka</a></li>
+          <li><a href="elektronika.html">Elektronika</a></li>
+          <li><a href="automatyka.html">Automatyka</a></li>
+        </ul>
+      </li>
+      <li><a href="uczestnicy.html">Uczestnicy</a></li>
+      <li><a href="aktywnosci.html">Aktywności</a></li>
+      <li><a href="organizatorzy.html">Organizatorzy</a></li>
+    </ul>
+  </div>
+</header>
 
     <!-- HERO -->
     <section id="home" class="hero">
