@@ -34,9 +34,66 @@
         <li><a href="organizatorzy.html">Organizatorzy</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="theme-toggle" data-theme-toggle aria-label="Przełącz motyw"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button>
-        <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+
+  <button class="theme-panel-btn" aria-label="Opcje wyświetlania" id="themePanelBtn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+      <circle cx="12" cy="12" r="3"/>
+    </svg>
+  </button>
+
+  <div class="theme-panel" id="themePanel" aria-hidden="true">
+    <p class="theme-panel__title">
+      Wygląd strony
+      <button class="theme-panel__close" id="themePanelClose" aria-label="Zamknij">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </p>
+
+    <div class="theme-panel__section">
+      <p class="theme-panel__label">Motyw</p>
+      <div class="theme-panel__row">
+        <button class="theme-opt" data-theme="light">
+          <span class="theme-opt__preview theme-opt__preview--light"></span>Jasny
+        </button>
+        <button class="theme-opt" data-theme="dark">
+          <span class="theme-opt__preview theme-opt__preview--dark"></span>Ciemny
+        </button>
+        <button class="theme-opt" data-theme="auto">
+          <span class="theme-opt__preview theme-opt__preview--auto"></span>Auto
+        </button>
       </div>
+    </div>
+
+    <div class="theme-panel__section">
+      <p class="theme-panel__label">Rozmiar tekstu</p>
+      <div class="theme-panel__row">
+        <button class="font-opt" data-size="small">A<small>-</small></button>
+        <button class="font-opt font-opt--active" data-size="normal">A</button>
+        <button class="font-opt" data-size="large">A<sup>+</sup></button>
+      </div>
+    </div>
+
+    <div class="theme-panel__section">
+      <p class="theme-panel__label">Kontrast</p>
+      <div class="theme-panel__row">
+        <button class="contrast-opt" data-contrast="normal">Normalny</button>
+        <button class="contrast-opt" data-contrast="high">Wysoki</button>
+      </div>
+    </div>
+
+    <button class="theme-panel__reset" id="themePanelReset">↺ Resetuj</button>
+  </div>
+
+  <div class="theme-panel-overlay" id="themePanelOverlay"></div>
+
+  <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+
+</div>
     </nav>
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <ul role="list">
