@@ -421,3 +421,57 @@
     document.querySelector('.font-opt[data-size="normal"]')?.classList.add('font-opt--active');
   });
 })();
+
+
+
+
+  (function () {
+    const modal = document.getElementById('photoModal');
+    const modalImage = document.getElementById('photoModalImage');
+    const modalCaption = document.getElementById('photoModalCaption');
+    const modalClose = document.getElementById('photoModalClose');
+    const triggers = document.querySelectorAll('.firma-photo-btn');
+
+    if (!modal || !modalImage || !modalCaption || !modalClose || !triggers.length) return;
+
+    const openModal = (src, caption) => {
+      modalImage.src = src;
+      modalImage.alt = caption || 'Powiększone zdjęcie';
+      modalCaption.textContent = caption || '';
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeModal = () => {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      modalImage.src = '';
+      modalImage.alt = '';
+      modalCaption.textContent = '';
+      document.body.style.overflow = '';
+    };
+
+    triggers.forEach((button) => {
+      button.addEventListener('click', () => {
+        const src = button.getAttribute('data-photo');
+        const caption = button.getAttribute('data-caption') || '';
+        if (!src) return;
+        openModal(src, caption);
+      });
+    });
+
+    modalClose.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+        closeModal();
+      }
+    });
+  })();

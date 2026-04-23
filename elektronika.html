@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Praktyki — Informatyka | Erasmus+ Manavgat 2025</title>
+  <title>Praktyki — Elektronika | Erasmus+ Manavgat 2025</title>
   <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/subpage.css"/>
@@ -12,81 +12,111 @@
 
   <header class="site-header" id="top">
     <nav class="nav-inner">
-      <a href="index.html" class="nav-logo"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#780000"/><text x="18" y="24" font-size="16" font-family="serif" font-weight="700" fill="#FDF0D5" text-anchor="middle">E+</text></svg><span>ZSE Rzeszów</span></a>
+      <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus+">
+        <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
+        <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
+        <div class="nav-logo-text">
+          <strong>MANAVGAT</strong>
+          <span>Erasmus+ 2025</span>
+        </div>
+      </a>
+
       <ul class="nav-links" role="list">
-        <li class="has-dropdown"><button class="nav-dropdown-btn" aria-expanded="false">Praktyki <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <ul class="dropdown-menu"><li><a href="informatyka.html" class="active">Informatyka</a></li><li><a href="elektronika.html">Elektronika</a></li><li><a href="automatyka.html">Automatyka</a></li></ul>
+        <li class="has-dropdown">
+          <button class="nav-dropdown-btn" aria-expanded="false">Praktyki
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="informatyka.html">Informatyka</a></li>
+            <li><a href="elektronika.html" class="active">Elektronika</a></li>
+            <li><a href="automatyka.html">Automatyka</a></li>
+          </ul>
         </li>
         <li><a href="uczestnicy.html">Uczestnicy</a></li>
         <li><a href="aktywnosci.html">Aktywności</a></li>
         <li><a href="organizatorzy.html">Organizatorzy</a></li>
       </ul>
+
       <div class="nav-actions">
-
-  <button class="theme-panel-btn" aria-label="Opcje wyświetlania" id="themePanelBtn">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-      <circle cx="12" cy="12" r="3"/>
-    </svg>
-  </button>
-
-  <div class="theme-panel" id="themePanel" aria-hidden="true">
-    <p class="theme-panel__title">
-      Wygląd strony
-      <button class="theme-panel__close" id="themePanelClose" aria-label="Zamknij">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M18 6L6 18M6 6l12 12"/>
-        </svg>
-      </button>
-    </p>
-
-    <div class="theme-panel__section">
-      <p class="theme-panel__label">Motyw</p>
-      <div class="theme-panel__row">
-        <button class="theme-opt" data-theme="light">
-          <span class="theme-opt__preview theme-opt__preview--light"></span>Jasny
+        <button class="theme-panel-btn" aria-label="Opcje wyświetlania" id="themePanelBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
         </button>
-        <button class="theme-opt" data-theme="dark">
-          <span class="theme-opt__preview theme-opt__preview--dark"></span>Ciemny
-        </button>
-        <button class="theme-opt" data-theme="auto">
-          <span class="theme-opt__preview theme-opt__preview--auto"></span>Auto
+
+        <div class="theme-panel" id="themePanel" aria-hidden="true">
+          <p class="theme-panel__title">
+            Wygląd strony
+            <button class="theme-panel__close" id="themePanelClose" aria-label="Zamknij">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            </button>
+          </p>
+
+          <div class="theme-panel__section">
+            <p class="theme-panel__label">Motyw</p>
+            <div class="theme-panel__row">
+              <button class="theme-opt" data-theme="light">
+                <span class="theme-opt__preview theme-opt__preview--light"></span>Jasny
+              </button>
+              <button class="theme-opt" data-theme="dark">
+                <span class="theme-opt__preview theme-opt__preview--dark"></span>Ciemny
+              </button>
+              <button class="theme-opt" data-theme="auto">
+                <span class="theme-opt__preview theme-opt__preview--auto"></span>Auto
+              </button>
+            </div>
+          </div>
+
+          <div class="theme-panel__section">
+            <p class="theme-panel__label">Rozmiar tekstu</p>
+            <div class="theme-panel__row">
+              <button class="font-opt" data-size="small">A<small>-</small></button>
+              <button class="font-opt font-opt--active" data-size="normal">A</button>
+              <button class="font-opt" data-size="large">A<sup>+</sup></button>
+            </div>
+          </div>
+
+          <div class="theme-panel__section">
+            <p class="theme-panel__label">Kontrast</p>
+            <div class="theme-panel__row">
+              <button class="contrast-opt" data-contrast="normal">Normalny</button>
+              <button class="contrast-opt" data-contrast="high">Wysoki</button>
+            </div>
+          </div>
+
+          <button class="theme-panel__reset" id="themePanelReset">↺ Resetuj</button>
+        </div>
+
+        <div class="theme-panel-overlay" id="themePanelOverlay"></div>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
-    </div>
-
-    <div class="theme-panel__section">
-      <p class="theme-panel__label">Rozmiar tekstu</p>
-      <div class="theme-panel__row">
-        <button class="font-opt" data-size="small">A<small>-</small></button>
-        <button class="font-opt font-opt--active" data-size="normal">A</button>
-        <button class="font-opt" data-size="large">A<sup>+</sup></button>
-      </div>
-    </div>
-
-    <div class="theme-panel__section">
-      <p class="theme-panel__label">Kontrast</p>
-      <div class="theme-panel__row">
-        <button class="contrast-opt" data-contrast="normal">Normalny</button>
-        <button class="contrast-opt" data-contrast="high">Wysoki</button>
-      </div>
-    </div>
-
-    <button class="theme-panel__reset" id="themePanelReset">↺ Resetuj</button>
-  </div>
-
-  <div class="theme-panel-overlay" id="themePanelOverlay"></div>
-
-  <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-    <span></span><span></span><span></span>
-  </button>
-
-</div>
     </nav>
+
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <ul role="list">
-        <li class="mobile-has-dropdown"><button class="mobile-dropdown-btn" aria-expanded="false">Praktyki <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button><ul class="mobile-submenu"><li><a href="informatyka.html">Informatyka</a></li><li><a href="elektronika.html">Elektronika</a></li><li><a href="automatyka.html">Automatyka</a></li></ul></li>
-        <li><a href="uczestnicy.html">Uczestnicy</a></li><li><a href="aktywnosci.html">Aktywności</a></li><li><a href="organizatorzy.html">Organizatorzy</a></li>
+        <li class="mobile-has-dropdown">
+          <button class="mobile-dropdown-btn" aria-expanded="false">Praktyki
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <ul class="mobile-submenu">
+            <li><a href="informatyka.html">Informatyka</a></li>
+            <li><a href="elektronika.html">Elektronika</a></li>
+            <li><a href="automatyka.html">Automatyka</a></li>
+          </ul>
+        </li>
+        <li><a href="uczestnicy.html">Uczestnicy</a></li>
+        <li><a href="aktywnosci.html">Aktywności</a></li>
+        <li><a href="organizatorzy.html">Organizatorzy</a></li>
       </ul>
     </div>
   </header>
@@ -97,13 +127,21 @@
       <div class="container page-hero-inner">
         <div class="page-hero-text">
           <span class="section-tag tag-light">Praktyki zawodowe · Manavgat 2025</span>
-          <!-- ZMIEŃ NA: Elektronika / Automatyka dla pozostałych plików -->
-          <h1>Praktyki — <span style="color:#a8d4f0">Informatyka</span></h1>
-          <p>Uczniowie kierunku informatycznego odbywali praktyki w tureckich firmach IT, pracując nad realnymi projektami i rozwiązaniami technologicznymi.</p>
+          <h1>Praktyki — <span style="color:#a8d4f0">Elektronika</span></h1>
+          <p>
+            Uczniowie kierunku elektronicznego odbywali praktyki w tureckiej firmie zajmującej się
+            systemami audiowizualnymi, montażem, konfiguracją i serwisem urządzeń nagłośnieniowych,
+            oświetleniowych i projekcyjnych.
+          </p>
         </div>
         <div class="page-hero-img">
-          <div class="img-placeholder-dark" role="img" aria-label="Zdjęcie z praktyk informatycznych">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <div class="img-placeholder-dark" role="img" aria-label="Zdjęcie z praktyk elektronicznych">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <path d="M9 9h6"></path>
+              <path d="M9 12h6"></path>
+              <path d="M9 15h3"></path>
+            </svg>
             <p>Zdjęcie z praktyk</p>
           </div>
         </div>
@@ -113,48 +151,166 @@
     <section class="section-padding bg-light">
       <div class="container">
         <div class="section-header center">
-          <span class="section-tag tag-blue">Zakres prac</span>
+          <span class="section-tag tag-blue">Zakres praktyk</span>
           <h2>Czego uczyli się uczniowie?</h2>
-          <p class="section-lead">Praktyki w tureckich firmach IT obejmowały pracę z nowoczesnymi technologiami i realnymi wyzwaniami branżowymi.</p>
+          <p class="section-lead">
+            Praktyki elektroniczne obejmowały pracę przy systemach audiowizualnych, podłączanie i konfigurację
+            sprzętu, konserwację urządzeń oraz kontrolę ich stanu technicznego.
+          </p>
         </div>
+
         <div class="praktyki-grid">
           <div class="praktyki-card">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            <h3>Programowanie aplikacji</h3>
-            <p>Tworzenie aplikacji webowych i mobilnych w środowisku produkcyjnym firmy.</p>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+              <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+            </svg>
+            <h3>Konfiguracja sprzętu audio</h3>
+            <p>
+              Uczniowie uczyli się podłączania i konfiguracji sprzętu audio, w tym mikserów,
+              zestawów głośnikowych oraz podstawowych elementów systemów nagłośnieniowych.
+            </p>
           </div>
+
           <div class="praktyki-card">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            <h3>Administracja sieciami</h3>
-            <p>Konfiguracja i zarządzanie infrastrukturą sieciową w środowisku biznesowym.</p>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+              <path d="M8 20h8"></path>
+              <path d="M12 16v4"></path>
+            </svg>
+            <h3>Podłączanie projektorów</h3>
+            <p>
+              W ramach praktyk realizowano zadania związane z podłączaniem projektorów,
+              sprawdzaniem poprawności działania obrazu oraz podstawową konfiguracją urządzeń projekcyjnych.
+            </p>
           </div>
+
           <div class="praktyki-card">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-            <h3>Bazy danych</h3>
-            <p>Projektowanie i optymalizacja relacyjnych baz danych w projektach klienckich.</p>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v6"></path>
+              <path d="M5 10h14"></path>
+              <path d="M7 10l-2 10"></path>
+              <path d="M17 10l2 10"></path>
+            </svg>
+            <h3>Montaż systemów nagłośnieniowych</h3>
+            <p>
+              Uczniowie uczestniczyli w montażu i uruchamianiu systemów nagłośnieniowych
+              oraz poznawali zasady wykonywania połączeń zgodnie z dokumentacją techniczną.
+            </p>
           </div>
+
           <div class="praktyki-card">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <h3>Cyberbezpieczeństwo</h3>
-            <p>Podstawy bezpieczeństwa systemów i analiza podatności w środowisku testowym.</p>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0A1.65 1.65 0 0 0 10.91 3H11a2 2 0 1 1 4 0h.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0A1.65 1.65 0 0 0 21 10.91V11a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <h3>Konserwacja i kontrola urządzeń</h3>
+            <p>
+              Istotną częścią praktyk była konserwacja i czyszczenie urządzeń audiowizualnych,
+              a także demontaż i kontrola stanu technicznego sprzętu oświetleniowego.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- GALERIA -->
-    <section class="section-padding bg-navy">
+    <section class="section-padding">
       <div class="container">
         <div class="section-header center">
-          <span class="section-tag tag-light">Fotorelacja</span>
-          <h2 class="text-light">Zdjęcia z praktyk</h2>
+          <span class="section-tag tag-red">Podział firm</span>
+          <h2>Firma elektroniczna</h2>
+          <p class="section-lead">
+            Uczniowie kierunku elektronicznego odbywali praktyki w firmie działającej w branży
+            systemów audiowizualnych, obsługującej instalacje nagłośnieniowe, oświetleniowe i projekcyjne.
+          </p>
         </div>
-        <div class="gallery-grid">
-          <div class="gal-item gal-large"><div class="gal-ph"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Główne zdjęcie</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div></div>
+
+        <div class="firmy-grid">
+          <article class="firma-card">
+            <div class="firma-top">
+              <h3>DEES Ses Işık Görüntü Sistemleri</h3>
+              <span class="firma-badge">Elektronika</span>
+            </div>
+
+            <div class="firma-meta">
+              <span>kilku–kilkunastu pracowników</span>
+              <span>Systemy audiowizualne</span>
+            </div>
+
+            <p>
+              DEES Ses Işık Görüntü Sistemleri to firma działająca w branży systemów audiowizualnych.
+              Zespół składa się z kilku–kilkunastu pracowników, w tym techników, serwisantów
+              oraz osób zajmujących się montażem i obsługą projektów.
+            </p>
+
+            <p>
+              Firma zajmuje się sprzedażą, instalacją, konfiguracją oraz serwisem systemów
+              nagłośnieniowych, oświetleniowych i projekcyjnych. Dodatkowo oferuje wynajem sprzętu
+              oraz kompleksową obsługę wydarzeń, takich jak koncerty, eventy i instalacje sceniczne.
+            </p>
+
+            <div class="kierunek-note">
+              W czasie praktyk uczniowie wykonywali czynności związane z konserwacją i czyszczeniem urządzeń
+              audiowizualnych, podłączaniem i konfiguracją sprzętu audio, montażem systemów nagłośnieniowych,
+              korzystaniem z dokumentacji technicznej, sprawdzaniem działania projektorów oraz kontrolą
+              stanu technicznego urządzeń oświetleniowych.
+            </div>
+
+            <div class="firma-gallery">
+              <span class="firma-gallery-title">Galeria firmy</span>
+
+              <div class="firma-gallery-grid">
+                <button
+                  class="firma-photo-btn"
+                  type="button"
+                  data-photo="TU_WPISZ_SCIEZKE_DO_DEES_1"
+                  data-caption="DEES Ses Işık Görüntü Sistemleri – zdjęcie 1"
+                  aria-label="Powiększ zdjęcie 1 firmy DEES Ses Işık Görüntü Sistemleri"
+                >
+                  <img
+                    src="TU_WPISZ_SCIEZKE_DO_DEES_1"
+                    alt="DEES Ses Işık Görüntü Sistemleri – zdjęcie 1"
+                    class="firma-photo"
+                    loading="lazy"
+                  />
+                  <span class="firma-photo-overlay">Zdjęcie 1</span>
+                </button>
+
+                <button
+                  class="firma-photo-btn"
+                  type="button"
+                  data-photo="TU_WPISZ_SCIEZKE_DO_DEES_2"
+                  data-caption="DEES Ses Işık Görüntü Sistemleri – zdjęcie 2"
+                  aria-label="Powiększ zdjęcie 2 firmy DEES Ses Işık Görüntü Sistemleri"
+                >
+                  <img
+                    src="TU_WPISZ_SCIEZKE_DO_DEES_2"
+                    alt="DEES Ses Işık Görüntü Sistemleri – zdjęcie 2"
+                    class="firma-photo"
+                    loading="lazy"
+                  />
+                  <span class="firma-photo-overlay">Zdjęcie 2</span>
+                </button>
+
+                <button
+                  class="firma-photo-btn"
+                  type="button"
+                  data-photo="TU_WPISZ_SCIEZKE_DO_DEES_3"
+                  data-caption="DEES Ses Işık Görüntü Sistemleri – zdjęcie 3"
+                  aria-label="Powiększ zdjęcie 3 firmy DEES Ses Işık Görüntü Sistemleri"
+                >
+                  <img
+                    src="TU_WPISZ_SCIEZKE_DO_DEES_3"
+                    alt="DEES Ses Işık Görüntü Sistemleri – zdjęcie 3"
+                    class="firma-photo"
+                    loading="lazy"
+                  />
+                  <span class="firma-photo-overlay">Zdjęcie 3</span>
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -162,11 +318,94 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand"><svg width="32" height="32" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#780000"/><text x="18" y="24" font-size="16" font-family="serif" font-weight="700" fill="#FDF0D5" text-anchor="middle">E+</text></svg><div><strong>Zespół Szkół Elektronicznych w Rzeszowie</strong><p>Erasmus+ · Manavgat 2025</p></div></div>
-      <nav class="footer-nav"><a href="index.html">Strona Główna</a><a href="uczestnicy.html">Uczestnicy</a><a href="aktywnosci.html">Aktywności</a><a href="organizatorzy.html">Organizatorzy</a></nav>
-      <p class="footer-legal">Dofinansowane przez Unię Europejską<br>nr 2024-1-PL01-KA121-VET-000203996<br>© 2025 ZSE Rzeszów</p>
+      <div class="footer-brand">
+        <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+          <rect width="36" height="36" rx="8" fill="#780000"/>
+          <text x="18" y="24" font-size="16" font-family="serif" font-weight="700" fill="#FDF0D5" text-anchor="middle">E+</text>
+        </svg>
+        <div>
+          <strong>Zespół Szkół Elektronicznych w Rzeszowie</strong>
+          <p>Erasmus+ · Manavgat 2025</p>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Strona Główna</a>
+        <a href="uczestnicy.html">Uczestnicy</a>
+        <a href="aktywnosci.html">Aktywności</a>
+        <a href="organizatorzy.html">Organizatorzy</a>
+      </nav>
+      <p class="footer-legal">
+        Dofinansowane przez Unię Europejską<br>
+        nr 2024-1-PL01-KA121-VET-000203996<br>
+        © 2025 ZSE Rzeszów
+      </p>
     </div>
   </footer>
+
   <script src="js/main.js"></script>
+
+  <div class="photo-modal" id="photoModal" aria-hidden="true">
+    <div class="photo-modal-dialog" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+      <button class="photo-modal-close" id="photoModalClose" type="button" aria-label="Zamknij podgląd zdjęcia">
+        ×
+      </button>
+
+      <figure class="photo-modal-figure">
+        <img id="photoModalImage" class="photo-modal-image" src="" alt=""/>
+        <figcaption id="photoModalCaption" class="photo-modal-caption"></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const modal = document.getElementById('photoModal');
+      const modalImage = document.getElementById('photoModalImage');
+      const modalCaption = document.getElementById('photoModalCaption');
+      const modalClose = document.getElementById('photoModalClose');
+      const triggers = document.querySelectorAll('.firma-photo-btn');
+
+      if (!modal || !modalImage || !modalCaption || !modalClose || !triggers.length) return;
+
+      const openModal = (src, caption) => {
+        modalImage.src = src;
+        modalImage.alt = caption || 'Powiększone zdjęcie';
+        modalCaption.textContent = caption || '';
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeModal = () => {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        modalImage.src = '';
+        modalImage.alt = '';
+        modalCaption.textContent = '';
+        document.body.style.overflow = '';
+      };
+
+      triggers.forEach((button) => {
+        button.addEventListener('click', () => {
+          const src = button.getAttribute('data-photo');
+          const caption = button.getAttribute('data-caption') || '';
+          if (!src) return;
+          openModal(src, caption);
+        });
+      });
+
+      modalClose.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', (event) => {
+        if (event.target === modal) closeModal();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
