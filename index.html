@@ -9,381 +9,257 @@
 </head>
 <body>
 
-  <a href="#main" class="skip-link">Przejdź do treści</a>
-
+  
   <!-- NAWIGACJA -->
-<header class="site-header" id="top">
-  <nav class="nav-inner" aria-label="Główna nawigacja">
-    <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus+">
-  <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
-  <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
-  <div class="nav-logo-text">
-    <strong>MANAVGAT</strong>
-    <span>Erasmus+ 2025</span>
-  </div>
-</a>
+  <header class="site-header" id="top">
+    <nav class="nav-inner" aria-label="Główna nawigacja">
+      <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus+">
+        <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
+        <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
+        <div class="nav-logo-text">
+          <strong>MANAVGAT</strong>
+          <span>Erasmus+ 2025</span>
+        </div>
+      </a>
 
-    <ul class="nav-links" role="list">
-      <li class="has-dropdown">
-        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
-          Praktyki
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <ul class="dropdown-menu" role="list">
-          <li><a href="informatyka.html">Informatyka</a></li>
-          <li><a href="elektronika.html">Elektronika</a></li>
-          <li><a href="automatyka.html">Automatyka</a></li>
-        </ul>
-      </li>
-      <li><a href="uczestnicy.html">Uczestnicy</a></li>
-      <li><a href="aktywnosci.html">Aktywności</a></li>
-      <li><a href="organizatorzy.html">Organizatorzy</a></li>
-    </ul>
+      <ul class="nav-links" role="list">
+        <li class="has-dropdown">
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Praktyki
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <ul class="dropdown-menu" role="list">
+            <li><a href="informatyka.html">Informatyka</a></li>
+            <li><a href="elektronika.html">Elektronika</a></li>
+            <li><a href="automatyka.html">Automatyka</a></li>
+          </ul>
+        </li>
+        <li><a href="uczestnicy.html">Uczestnicy</a></li>
+        <li><a href="aktywnosci.html">Aktywności</a></li>
+        <li><a href="organizatorzy.html">Organizatorzy</a></li>
+      </ul>
 
-    <div class="nav-actions">
-
-  <button class="theme-panel-btn" aria-label="Opcje wyświetlania" id="themePanelBtn">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-      <circle cx="12" cy="12" r="3"/>
-    </svg>
-  </button>
-
-  <div class="theme-panel" id="themePanel" aria-hidden="true">
-    <p class="theme-panel__title">
-      Wygląd strony
-      <button class="theme-panel__close" id="themePanelClose" aria-label="Zamknij">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M18 6L6 18M6 6l12 12"/>
-        </svg>
-      </button>
-    </p>
-
-    <div class="theme-panel__section">
-      <p class="theme-panel__label">Motyw</p>
-      <div class="theme-panel__row">
-        <button class="theme-opt" data-theme="light">
-          <span class="theme-opt__preview theme-opt__preview--light"></span>Jasny
-        </button>
-        <button class="theme-opt" data-theme="dark">
-          <span class="theme-opt__preview theme-opt__preview--dark"></span>Ciemny
-        </button>
-        <button class="theme-opt" data-theme="auto">
-          <span class="theme-opt__preview theme-opt__preview--auto"></span>Auto
+      <div class="nav-actions">
+        <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
-    </div>
+    </nav>
 
-    <div class="theme-panel__section">
-      <p class="theme-panel__label">Rozmiar tekstu</p>
-      <div class="theme-panel__row">
-        <button class="font-opt" data-size="small">A<small>-</small></button>
-        <button class="font-opt font-opt--active" data-size="normal">A</button>
-        <button class="font-opt" data-size="large">A<sup>+</sup></button>
-      </div>
-    </div>
-
-    <div class="theme-panel__section">
-      <p class="theme-panel__label">Kontrast</p>
-      <div class="theme-panel__row">
-        <button class="contrast-opt" data-contrast="normal">Normalny</button>
-        <button class="contrast-opt" data-contrast="high">Wysoki</button>
-      </div>
-    </div>
-
-    <button class="theme-panel__reset" id="themePanelReset">↺ Resetuj</button>
-  </div>
-
-  <div class="theme-panel-overlay" id="themePanelOverlay"></div>
-
-  <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-    <span></span><span></span><span></span>
-  </button>
-
-</div>
-  </nav>
-
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <ul role="list">
-      <li class="mobile-has-dropdown">
-        <button class="mobile-dropdown-btn" aria-expanded="false">
-          Praktyki
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <ul class="mobile-submenu" aria-hidden="true">
-          <li><a href="informatyka.html">Informatyka</a></li>
-          <li><a href="elektronika.html">Elektronika</a></li>
-          <li><a href="automatyka.html">Automatyka</a></li>
-        </ul>
-      </li>
-      <li><a href="uczestnicy.html">Uczestnicy</a></li>
-      <li><a href="aktywnosci.html">Aktywności</a></li>
-      <li><a href="organizatorzy.html">Organizatorzy</a></li>
-    </ul>
-  </div>
-</header>
-
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-bg-bar" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <span class="section-tag">Program Erasmus+ · 2024-1-PL01-KA121-VET-000203996</span>
-          <h1>Erasmus+ <span class="accent-red">Manavgat</span> <span class="accent-blue">2025</span></h1>
-          <p class="hero-school">Zespół Szkół Elektronicznych w Rzeszowie</p>
-          <p class="hero-dates">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            24 kwietnia – 11 maja 2025 r.
-          </p>
-          <div class="hero-cta-group">
-            <a href="#about" class="btn btn-primary">Dowiedz się więcej</a>
-            <a href="#gallery" class="btn btn-outline">Zobacz galerię</a>
-          </div>
-        </div>
-        <div class="hero-img-wrap">
-          <div class="group-photo-wrap">
-            <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg" alt="Zdjęcie grupowe uczestników projektu w górach" class="group-photo">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATYSTYKI -->
-    <section class="stats-bar" aria-label="Statystyki projektu">
-      <div class="container stats-inner">
-        <div class="stat-item">
-          <span class="stat-num">18</span>
-          <span class="stat-lbl">uczniów</span>
-        </div>
-        <div class="stat-sep" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num">9</span>
-          <span class="stat-lbl">firm przyjmujących</span>
-        </div>
-        <div class="stat-sep" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num">15</span>
-          <span class="stat-lbl">dni praktyk</span>
-        </div>
-        <div class="stat-sep" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num">3</span>
-          <span class="stat-lbl">kierunki zawodowe</span>
-        </div>
-      </div>
-    </section>
-
-   
-<!-- O PROJEKCIE -->
-<section id="about" class="section-padding bg-light" aria-labelledby="about-h">
-  <div class="container two-col" style="display: flex; align-items: center; gap: 4rem;">
-    
-    <!-- LEWA KOLUMNA: TEKST -->
-    <div class="col-text">
-      <span class="section-tag tag-blue">O projekcie</span>
-      <h2 id="about-h">Zagraniczne praktyki zawodowe dofinansowane przez UE</h2>
-      <p>
-        W ramach projektu UE Erasmus+ nr 2024-1-PL01-KA121-VET-000203996, realizowanego przez Zespół Szkół Elektronicznych w Rzeszowie, 22 uczniów naszej szkoły uczestniczyło w praktykach zawodowych z zakresu informatyki, elektroniki i automatyki w Turcji.
-      </p>
-      <p>
-        Praktyki zostały zorganizowane we współpracy z partnerską szkołą Manavgat Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi i odbywały się w 9 tureckich firmach działających w branży informatycznej, elektronicznej oraz automatycznej.
-      </p>
-      <p>
-        Staż realizowano w Manavgat, w regionie Antalya, w okresie od 24.04.2025 do 11.05.2025 r., a udział w projekcie obejmował także przygotowanie kulturowo-pedagogiczne, językowe i organizacyjne oraz potwierdzenie efektów uczenia się dokumentami Europass Mobility.
-      </p>
-    </div>
-
-    <!-- PRAWA KOLUMNA: ZDJĘCIE -->
-    <div class="col-img">
-      <div class="group-photo-wrap">
-        <img src="zdjecia-erasumus/czas_wolny/hotel/amourprzed.jpeg" alt="Zdjęcie grupowe uczestników projektu" class="group-photo" style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,0.12); border: 8px solid #ffffff; display: block;">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <!-- CELE PROJEKTU -->
-    <section id="goals" class="section-padding bg-blue-dark" aria-labelledby="goals-h">
-      <div class="container">
-        <div class="section-header center">
-          <span class="section-tag tag-light">Cele projektu</span>
-          <h2 id="goals-h" class="text-light">Co zyskują uczniowie?</h2>
-          <p class="section-lead text-light-muted">Program łączy rozwój zawodowy z osobistym — każdy uczestnik wraca z konkretnymi umiejętnościami i nowym spojrzeniem na swoją ścieżkę kariery.</p>
-        </div>
-        <div class="goals-grid">
-          <div class="goal-card goal-featured">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-            <h3>Kompetencje zawodowe</h3>
-            <p>Praca w 9 tureckich zakładach IT, elektroniki i automatyki. Certyfikaty i dokumenty <strong>Europass Mobility</strong> uznawane w całej UE.</p>
-          </div>
-          <div class="goal-card">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            <h3>Mobilność europejska</h3>
-            <p>Zwiększenie mobilności uczniów na arenie europejskiej i rozszerzenie horyzontów zawodowych.</p>
-          </div>
-          <div class="goal-card">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            <h3>Kompetencje językowe</h3>
-            <p>Komunikacja zawodowa w języku angielskim w codziennym, realnym środowisku pracy.</p>
-          </div>
-          <div class="goal-card">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            <h3>Więzi międzynarodowe</h3>
-            <p>Budowanie kontaktów z rówieśnikami i pracodawcami z Turcji, otwieranie drzwi do przyszłej współpracy.</p>
-          </div>
-          <div class="goal-card">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            <h3>Samoświadomość</h3>
-            <p>Wzrost samodzielności i pewności siebie poprzez funkcjonowanie w nowym kraju i środowisku kulturowym.</p>
-          </div>
-          <div class="goal-img-placeholder" role="img" aria-label="Uczniowie podczas zadań praktycznych">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            <p>Uczniowie podczas zadań w firmie</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ETAPY I OFERTA -->
-    <section id="stages" class="section-padding bg-light" aria-labelledby="stages-h">
-      <div class="container">
-        <div class="section-header center">
-          <span class="section-tag tag-red">Etapy i Oferta</span>
-          <h2 id="stages-h">Jak wygląda wyjazd?</h2>
-        </div>
-        <div class="stages-grid">
-          <article class="stage-card">
-            <div class="stage-num" aria-hidden="true">01</div>
-            <div class="stage-img-ph" role="img" aria-label="Przygotowania">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-              <span>Zdjęcie etapu</span>
-            </div>
-            <h3>Przygotowania</h3>
-            <p>Kulturowo-pedagogiczne i językowe szkolenia przed wyjazdem, przygotowujące uczniów do pracy w tureckim środowisku.</p>
-            <ul class="stage-list">
-              <li>Szkolenia językowe (angielski zawodowy)</li>
-              <li>Warsztaty kulturowe — Turcja</li>
-              <li>Przygotowanie organizacyjne</li>
-            </ul>
-          </article>
-          <article class="stage-card stage-card--red">
-            <div class="stage-num" aria-hidden="true">02</div>
-            <div class="stage-img-ph" role="img" aria-label="Praktyki zawodowe">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-              <span>Zdjęcie etapu</span>
-            </div>
-            <h3>Praktyki zawodowe</h3>
-            <p>Trzy tygodnie pracy w 9 tureckich firmach — z certyfikatami i dokumentami Europass Mobility honorowanymi w całej UE.</p>
-            <ul class="stage-list">
-              <li>9 firm w regionie Antalya</li>
-              <li>Certyfikaty branżowe</li>
-              <li>Europass Mobility</li>
-            </ul>
-          </article>
-          <article class="stage-card">
-            <div class="stage-num" aria-hidden="true">03</div>
-            <div class="stage-img-ph" role="img" aria-label="Dokumentacja i ewaluacja">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-              <span>Zdjęcie etapu</span>
-            </div>
-            <h3>Dokumentacja i ewaluacja</h3>
-            <p>Sporządzanie raportów, ocena kompetencji oraz upowszechnianie rezultatów projektu w szkole i regionie.</p>
-            <ul class="stage-list">
-              <li>Raporty z praktyk</li>
-              <li>Ewaluacja kompetencji</li>
-              <li>Upowszechnianie rezultatów</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALERIA -->
-    <section id="gallery" class="section-padding bg-navy" aria-labelledby="gallery-h">
-      <div class="container">
-        <div class="section-header center">
-          <span class="section-tag tag-light">Galeria / Relacja</span>
-          <h2 id="gallery-h" class="text-light">Fotorelacja z Turcji</h2>
-          <p class="section-lead text-light-muted">Codzienne aktywności, czas wolny i zadania praktyczne podczas pobytu w regionie Manavgat / Antalya.</p>
-        </div>
-        <div class="gallery-grid">
-          <div class="gal-item gal-large">
-            <div class="gal-ph"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie główne</span></div>
-          </div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie 2</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie 3</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie 4</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie 5</span></div></div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-  <div class="footer-top">
-
-    <div class="footer-brand">
-      <p class="footer-logo">Erasmus+ Manavgat 2025</p>
-      <p>Zespół Szkół Elektronicznych w Rzeszowie<br>
-         Praktyki zawodowe · 24.04 – 11.05.2025</p>
-      <div class="footer-eu">
-        <span class="eu-flag">🇪🇺</span>
-        <span>Dofinansowane przez Unię Europejską<br>
-        Nr 2024-1-PL01-KA121-VET-000203996</span>
-      </div>
-    </div>
-
-    <div class="footer-nav-col">
-      <h4>Strony</h4>
-      <ul>
-        <li><a href="index.html">Strona Główna</a></li>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li class="mobile-has-dropdown">
+          <button class="mobile-dropdown-btn" aria-expanded="false">
+            Praktyki
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <ul class="mobile-submenu" aria-hidden="true">
+            <li><a href="informatyka.html">Informatyka</a></li>
+            <li><a href="elektronika.html">Elektronika</a></li>
+            <li><a href="automatyka.html">Automatyka</a></li>
+          </ul>
+        </li>
         <li><a href="uczestnicy.html">Uczestnicy</a></li>
         <li><a href="aktywnosci.html">Aktywności</a></li>
         <li><a href="organizatorzy.html">Organizatorzy</a></li>
       </ul>
     </div>
+  </header>
 
-    <div class="footer-nav-col">
-      <h4>Praktyki</h4>
-      <ul>
-        <li><a href="informatyka.html">Informatyka</a></li>
-        <li><a href="elektronika.html">Elektronika</a></li>
-        <li><a href="automatyka.html">Automatyka</a></li>
-      </ul>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-bar" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="section-tag">Program Erasmus+ · 2024-1-PL01-KA121-VET-000203996</span>
+        <h1>Erasmus+ <span class="accent-red">Manavgat</span> <span class="accent-blue">2025</span></h1>
+        <p class="hero-school">Zespół Szkół Elektronicznych w Rzeszowie</p>
+        <p class="hero-dates">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          24 kwietnia – 11 maja 2025 r.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#about" class="btn btn-primary">Dowiedz się więcej</a>
+          <a href="#gallery" class="btn btn-outline">Zobacz galerię</a>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <div class="group-photo-wrap">
+          <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg" alt="Zdjęcie grupowe uczestników projektu w górach" class="group-photo">
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="footer-nav-col">
-      <h4>Szkoła partnerska</h4>
-      <ul>
-        <li><a href="https://maps.google.com/?q=Manavgat+Borsa+Istanbul+Lisesi" target="_blank" rel="noopener">Manavgat Borsa İstanbul</a></li>
-        <li><a href="https://maps.google.com/?q=Manavgat,+Antalya,+Turkey" target="_blank" rel="noopener">Manavgat, Antalya</a></li>
-        <li><a href="https://erasmus-plus.ec.europa.eu" target="_blank" rel="noopener">Erasmus+ VET</a></li>
-      </ul>
+  <!-- STATYSTYKI -->
+  <section class="stats-bar" aria-label="Statystyki projektu">
+    <div class="container stats-inner">
+      <div class="stat-item">
+        <span class="stat-num">18</span>
+        <span class="stat-lbl">uczniów</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-num">9</span>
+        <span class="stat-lbl">firm przyjmujących</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-num">15</span>
+        <span class="stat-lbl">dni praktyk</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-lbl">kierunki zawodowe</span>
+      </div>
     </div>
+  </section>
 
-  </div>
-
-  <hr class="footer-divider">
-
-  <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2025 Zespół Szkół Elektronicznych w Rzeszowie</p>
-    <div class="footer-authors">
-      <span>Autorzy strony:</span>
-      <a href="LINK_DO_LINKEDIN_PATRYKA" target="_blank" rel="noopener">Patryk Śliż</a>
-      <span class="sep">·</span>
-      <a href="LINK_DO_LINKEDIN_LUKASZA" target="_blank" rel="noopener">Łukasz Nowak</a>
-      <span class="sep">·</span>
-      <a href="LINK_DO_LINKEDIN_BARTOSZA" target="_blank" rel="noopener">Bartosz Kliś</a>
+  <!-- O PROJEKCIE -->
+  <section id="about" class="section-padding bg-light" aria-labelledby="about-h">
+    <div class="container two-col" style="display: flex; align-items: center; gap: 4rem;">
+      <div class="col-text">
+        <span class="section-tag tag-blue">O projekcie</span>
+        <h2 id="about-h">Zagraniczne praktyki zawodowe dofinansowane przez UE</h2>
+        <p>W ramach projektu UE Erasmus+ nr 2024-1-PL01-KA121-VET-000203996, realizowanego przez Zespół Szkół Elektronicznych w Rzeszowie, 22 uczniów naszej szkoły uczestniczyło w praktykach zawodowych z zakresu informatyki, elektroniki i automatyki w Turcji.</p>
+        <p>Praktyki zostały zorganizowane we współpracy z partnerską szkołą Manavgat Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi i odbywały się w 9 tureckich firmach działających w branży informatycznej, elektronicznej oraz automatycznej.</p>
+        <p>Staż realizowano w Manavgat, w regionie Antalya, w okresie od 24.04.2025 do 11.05.2025 r., a udział w projekcie obejmował także przygotowanie kulturowo-pedagogiczne, językowe i organizacyjne oraz potwierdzenie efektów uczenia się dokumentami Europass Mobility.</p>
+      </div>
+      <div class="col-img">
+        <div class="group-photo-wrap">
+          <img src="zdjecia-erasumus/czas_wolny/hotel/amourprzed.jpeg" alt="Zdjęcie grupowe uczestników projektu" class="group-photo" style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,0.12); border: 8px solid #ffffff; display: block;">
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="footer-bar">
-    <div class="footer-bar-inner">Projekt Erasmus+ KA121-VET · Manavgat 2025</div>
-  </div>
-</footer>
+  <!-- CELE PROJEKTU -->
+  <section id="goals" class="section-padding bg-blue-dark" aria-labelledby="goals-h">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag tag-light">Cele projektu</span>
+        <h2 id="goals-h" class="text-light">Co zyskują uczniowie?</h2>
+        <p class="section-lead text-light-muted">Program łączy rozwój zawodowy z osobistym — każdy uczestnik wraca z konkretnymi umiejętnościami i nowym spojrzeniem na swoją ścieżkę kariery.</p>
+      </div>
+      <div class="goals-grid">
+        <div class="goal-card goal-featured">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <h3>Kompetencje zawodowe</h3>
+          <p>Praca w 9 tureckich zakładach IT, elektroniki i automatyki. Certyfikaty i dokumenty <strong>Europass Mobility</strong> uznawane w całej UE.</p>
+        </div>
+        <div class="goal-card">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <h3>Mobilność europejska</h3>
+          <p>Zwiększenie mobilności uczniów na arenie europejskiej i rozszerzenie horyzontów zawodowych.</p>
+        </div>
+        <div class="goal-card">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <h3>Kompetencje językowe</h3>
+          <p>Komunikacja zawodowa w języku angielskim w codziennym, realnym środowisku pracy.</p>
+        </div>
+        <div class="goal-card">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h3>Więzi międzynarodowe</h3>
+          <p>Budowanie kontaktów z rówieśnikami i pracodawcami z Turcji, otwieranie drzwi do przyszłej współpracy.</p>
+        </div>
+        <div class="goal-card">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <h3>Samoświadomość</h3>
+          <p>Wzrost samodzielności i pewności siebie poprzez funkcjonowanie w nowym kraju i środowisku kulturowym.</p>
+        </div>
+        <div class="goal-img-placeholder" role="img" aria-label="Uczniowie podczas zadań praktycznych">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <p>Uczniowie podczas zadań w firmie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPY I OFERTA -->
+  <section id="stages" class="section-padding bg-light" aria-labelledby="stages-h">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag tag-red">Etapy i Oferta</span>
+        <h2 id="stages-h">Jak wygląda wyjazd?</h2>
+      </div>
+      <div class="stages-grid">
+        <article class="stage-card">
+          <div class="stage-num" aria-hidden="true">01</div>
+          <div class="stage-img-ph" role="img" aria-label="Przygotowania">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>Zdjęcie etapu</span>
+          </div>
+          <h3>Przygotowania</h3>
+          <p>Kulturowo-pedagogiczne i językowe szkolenia przed wyjazdem, przygotowujące uczniów do pracy w tureckim środowisku.</p>
+          <ul class="stage-list">
+            <li>Szkolenia językowe (angielski zawodowy)</li>
+            <li>Warsztaty kulturowe — Turcja</li>
+            <li>Przygotowanie organizacyjne</li>
+          </ul>
+        </article>
+        <article class="stage-card stage-card--red">
+          <div class="stage-num" aria-hidden="true">02</div>
+          <div class="stage-img-ph" role="img" aria-label="Praktyki zawodowe">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            <span>Zdjęcie etapu</span>
+          </div>
+          <h3>Praktyki zawodowe</h3>
+          <p>Trzy tygodnie pracy w 9 tureckich firmach — z certyfikatami i dokumentami Europass Mobility honorowanymi w całej UE.</p>
+          <ul class="stage-list">
+            <li>9 firm w regionie Antalya</li>
+            <li>Certyfikaty branżowe</li>
+            <li>Europass Mobility</li>
+          </ul>
+        </article>
+        <article class="stage-card">
+          <div class="stage-num" aria-hidden="true">03</div>
+          <div class="stage-img-ph" role="img" aria-label="Dokumentacja i ewaluacja">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Zdjęcie etapu</span>
+          </div>
+          <h3>Dokumentacja i ewaluacja</h3>
+          <p>Sporządzanie raportów, ocena kompetencji oraz upowszechnianie rezultatów projektu w szkole i regionie.</p>
+          <ul class="stage-list">
+            <li>Raporty z praktyk</li>
+            <li>Ewaluacja kompetencji</li>
+            <li>Upowszechnianie rezultatów</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="gallery" class="section-padding bg-navy" aria-labelledby="gallery-h">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag tag-light">Galeria / Relacja</span>
+        <h2 id="gallery-h" class="text-light">Fotorelacja z Turcji</h2>
+        <p class="section-lead text-light-muted">Codzienne aktywności, czas wolny i zadania praktyczne podczas pobytu w regionie Manavgat / Antalya.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gal-item gal-large">
+          <div class="gal-ph"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie główne</span></div>
+        </div>
+        <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie 2</span></div></div>
+        <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie 3</span></div></div>
+        <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie 4</span></div></div>
+        <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie 5</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Projekt Erasmus+ Manavgat 2025 · Praktyki zawodowe 24.04 – 11.05.2025 · nr 2024-1-PL01-KA121-VET-000203996</p>
+    <p>Stronę wykonali: <a href="#" target="_blank" rel="noopener">Patryk Śliż</a> · <a href="#" target="_blank" rel="noopener">Łukasz Nowak</a> · <a href="#" target="_blank" rel="noopener">Bartosz Kliś</a></p>
+  </footer>
 
   <script src="js/main.js"></script>
+
+  
+
 </body>
 </html>
