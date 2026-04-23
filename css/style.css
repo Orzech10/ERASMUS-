@@ -132,7 +132,6 @@ button{cursor:pointer;background:none;border:none}
 
 /* HERO */
 .hero{position:relative;background:var(--navy-dark);overflow:hidden}
-.hero-bg-bar{position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(to bottom,var(--red),var(--blue))}
 .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(var(--s8),6vw,var(--s20));align-items:center;padding-block:clamp(var(--s12),8vw,var(--s20))}
 .hero-text .section-tag{background:rgba(253,240,213,0.12);color:#FDF0D5}
 .hero-text h1{font-size:var(--text-3xl);color:#FDF0D5;margin-bottom:var(--s4)}
