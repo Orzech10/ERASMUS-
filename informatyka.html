@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="light">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Praktyki — Informatyka | Erasmus+ Manavgat 2025</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/subpage.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praktyki Informatyka | Erasmus+ Manavgat 2025</title>
+  <meta name="description" content="Praktyki zawodowe uczniów kierunku informatycznego w tureckich firmach IT w Manavgat w ramach projektu Erasmus+." />
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/informatyka.css" />
 </head>
 <body>
 
   <header class="site-header" id="top">
-    <nav class="nav-inner">
+    <nav class="nav-inner" aria-label="Główna nawigacja">
       <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus+">
         <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
         <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
@@ -23,12 +24,13 @@
 
       <ul class="nav-links" role="list">
         <li class="has-dropdown">
-          <button class="nav-dropdown-btn" aria-expanded="false">Praktyki
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Praktyki
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="6 9 12 15 18 9"/>
             </svg>
           </button>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" role="list">
             <li><a href="informatyka.html" class="active">Informatyka</a></li>
             <li><a href="elektronika.html">Elektronika</a></li>
             <li><a href="automatyka.html">Automatyka</a></li>
@@ -40,83 +42,23 @@
       </ul>
 
       <div class="nav-actions">
-
-        <button class="theme-panel-btn" aria-label="Opcje wyświetlania" id="themePanelBtn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-            <circle cx="12" cy="12" r="3"/>
-          </svg>
-        </button>
-
-        <div class="theme-panel" id="themePanel" aria-hidden="true">
-          <p class="theme-panel__title">
-            Wygląd strony
-            <button class="theme-panel__close" id="themePanelClose" aria-label="Zamknij">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M18 6L6 18M6 6l12 12"/>
-              </svg>
-            </button>
-          </p>
-
-          <div class="theme-panel__section">
-            <p class="theme-panel__label">Motyw</p>
-            <div class="theme-panel__row">
-              <button class="theme-opt" data-theme="light">
-                <span class="theme-opt__preview theme-opt__preview--light"></span>Jasny
-              </button>
-              <button class="theme-opt" data-theme="dark">
-                <span class="theme-opt__preview theme-opt__preview--dark"></span>Ciemny
-              </button>
-              <button class="theme-opt" data-theme="auto">
-                <span class="theme-opt__preview theme-opt__preview--auto"></span>Auto
-              </button>
-            </div>
-          </div>
-
-          <div class="theme-panel__section">
-            <p class="theme-panel__label">Rozmiar tekstu</p>
-            <div class="theme-panel__row">
-              <button class="font-opt" data-size="small">A<small>-</small></button>
-              <button class="font-opt font-opt--active" data-size="normal">A</button>
-              <button class="font-opt" data-size="large">A<sup>+</sup></button>
-            </div>
-          </div>
-
-          <div class="theme-panel__section">
-            <p class="theme-panel__label">Kontrast</p>
-            <div class="theme-panel__row">
-              <button class="contrast-opt" data-contrast="normal">Normalny</button>
-              <button class="contrast-opt" data-contrast="high">Wysoki</button>
-            </div>
-          </div>
-
-          <button class="theme-panel__reset" id="themePanelReset">↺ Resetuj</button>
-        </div>
-
-        <div class="theme-panel-overlay" id="themePanelOverlay"></div>
-
         <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
       </div>
-
-  <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-    <span></span><span></span><span></span>
-  </button>
-</div>
-
     </nav>
 
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <ul role="list">
         <li class="mobile-has-dropdown">
-          <button class="mobile-dropdown-btn" aria-expanded="false">Praktyki
+          <button class="mobile-dropdown-btn" aria-expanded="false">
+            Praktyki
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="6 9 12 15 18 9"/>
             </svg>
           </button>
-          <ul class="mobile-submenu">
-            <li><a href="informatyka.html">Informatyka</a></li>
+          <ul class="mobile-submenu" aria-hidden="true">
+            <li><a href="informatyka.html" class="active">Informatyka</a></li>
             <li><a href="elektronika.html">Elektronika</a></li>
             <li><a href="automatyka.html">Automatyka</a></li>
           </ul>
@@ -128,331 +70,330 @@
     </div>
   </header>
 
-  <main id="main">
-
-    <section class="page-hero page-hero--blue">
-      <div class="container page-hero-inner">
-        <div class="page-hero-text">
-          <span class="section-tag tag-light">Praktyki zawodowe · Manavgat 2025</span>
-          <h1>Praktyki — <span style="color:#a8d4f0">Informatyka</span></h1>
-          <p>
+  <main>
+    <section class="hero hero-subpage">
+      <div class="hero-bg-bar" aria-hidden="true"></div>
+      <div class="container hero-inner hero-inner-subpage">
+        <div class="hero-text">
+          <span class="section-tag">Praktyki zawodowe · Informatyka</span>
+          <h1>Praktyki <span class="accent-red">Informatyka</span> <span class="accent-blue">Manavgat 2025</span></h1>
+          <p class="hero-school">Zespół Szkół Elektronicznych w Rzeszowie</p>
+          <p class="hero-lead">
             Uczniowie kierunku informatycznego odbywali praktyki w tureckich firmach IT,
-            serwisach komputerowych oraz punktach łączących sprzedaż sprzętu z usługami technicznymi.
+            zdobywając doświadczenie w serwisie komputerowym, diagnostyce, instalacji systemów,
+            konfiguracji oprogramowania oraz pracach technicznych u klientów.
           </p>
         </div>
-        <div class="page-hero-img">
-          <div class="img-placeholder-dark" role="img" aria-label="Zdjęcie z praktyk informatycznych">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <rect x="2" y="3" width="20" height="14" rx="2"/>
-              <path d="M8 21h8"/>
-              <path d="M12 17v4"/>
-            </svg>
-            <p>Zdjęcie z praktyk</p>
-          </div>
+
+        <div class="hero-img-wrap">
+          <button
+            class="hero-photo-trigger"
+            type="button"
+            data-images='["zdjecia-erasumus/informatyka/hero1.jpeg","zdjecia-erasumus/informatyka/hero2.jpeg","zdjecia-erasumus/informatyka/hero3.jpeg"]'
+            aria-label="Powiększ zdjęcie z praktyk informatycznych"
+          >
+            <img
+              src="zdjecia-erasumus/informatyka/hero1.jpeg"
+              alt="Zdjęcie z praktyk informatycznych"
+              class="hero-photo"
+            >
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="section-padding bg-light">
+    <section class="section-padding bg-light" aria-labelledby="learn-h">
       <div class="container">
         <div class="section-header center">
-          <span class="section-tag tag-blue">Zakres praktyk</span>
-          <h2>Czego uczyli się uczniowie?</h2>
-          <p class="section-lead">
-            Praktyki informatyczne w Manavgat obejmowały serwis komputerów, konfigurację systemów,
-            instalację oprogramowania, diagnozowanie usterek oraz bezpośredni kontakt z klientem.
-          </p>
+          <span class="section-tag tag-blue">Czego się uczyli?</span>
+          <h2 id="learn-h">Zakres zdobywanych umiejętności</h2>
         </div>
 
-        <div class="praktyki-grid">
-          <div class="praktyki-card">
+        <div class="learn-grid">
+          <article class="learn-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="3" width="20" height="14" rx="2"></rect>
-              <path d="M8 21h8"></path>
-              <path d="M12 17v4"></path>
+              <path d="M9 12l2 2 4-4"></path>
+              <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
             </svg>
-            <h3>Serwis komputerów i laptopów</h3>
-            <p>
-              Uczniowie diagnozowali usterki sprzętowe, czyścili podzespoły, wymieniali uszkodzone elementy
-              oraz przygotowywali urządzenia do dalszej eksploatacji.
-            </p>
-          </div>
+            <h3>Diagnostyka i naprawa</h3>
+            <p>Rozpoznawanie usterek komputerów i laptopów, wymiana uszkodzonych części, czyszczenie sprzętu oraz testowanie urządzeń po naprawie.</p>
+          </article>
 
-          <div class="praktyki-card">
+          <article class="learn-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-              <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
-              <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
-              <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
-              <polyline points="12 22.08 12 17"></polyline>
+              <path d="M12 3v18M3 12h18"></path>
             </svg>
-            <h3>Instalacja i konfiguracja oprogramowania</h3>
-            <p>
-              W czasie praktyk instalowano systemy operacyjne, sterowniki i aplikacje użytkowe,
-              a także przygotowywano sprzęt zgodnie z potrzebami klientów.
-            </p>
-          </div>
+            <h3>Systemy i oprogramowanie</h3>
+            <p>Instalowanie systemów operacyjnych, sterowników i potrzebnych programów oraz konfiguracja komputerów zgodnie z potrzebami użytkownika.</p>
+          </article>
 
-          <div class="praktyki-card">
+          <article class="learn-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M16 18l6-6-6-6"></path>
-              <path d="M8 6l-6 6 6 6"></path>
+              <path d="M4 7h16M4 12h10M4 17h7"></path>
             </svg>
-            <h3>Modernizacja i składanie zestawów</h3>
-            <p>
-              Uczniowie wspierali prace przy rozbudowie komputerów, wymianie podzespołów
-              oraz składaniu zestawów dopasowanych do oczekiwań użytkowników.
-            </p>
-          </div>
+            <h3>Obsługa klienta i serwisu</h3>
+            <p>Przyjmowanie sprzętu do naprawy, pomoc w określaniu problemów, organizacja stanowiska pracy oraz wsparcie codziennej pracy punktu serwisowego.</p>
+          </article>
 
-          <div class="praktyki-card">
+          <article class="learn-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              <path d="M7 7h10v10H7z"></path>
+              <path d="M3 10V8a2 2 0 0 1 2-2h2M21 10V8a2 2 0 0 0-2-2h-2M3 14v2a2 2 0 0 0 2 2h2M21 14v2a2 2 0 0 1-2 2h-2"></path>
             </svg>
-            <h3>Obsługa klienta i wsparcie techniczne</h3>
-            <p>
-              Ważną częścią praktyk była komunikacja z klientami, przyjmowanie sprzętu do naprawy
-              oraz pomoc w określaniu problemów technicznych.
-            </p>
-          </div>
+            <h3>Montaż i konfiguracja</h3>
+            <p>Składanie zestawów komputerowych, modernizacja podzespołów, konfiguracja urządzeń oraz podstawy pracy z systemami zabezpieczeń i sprzętem audiowizualnym.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section-padding">
+    <section class="section-padding bg-offset" aria-labelledby="companies-h">
       <div class="container">
         <div class="section-header center">
-          <span class="section-tag tag-red">Podział firm</span>
-          <h2>Firmy informatyczne</h2>
-          <p class="section-lead">
-            Uczniowie kierunku informatycznego odbywali praktyki w lokalnych firmach IT,
-            serwisach komputerowych oraz punktach łączących sprzedaż sprzętu z usługami technicznymi.
-          </p>
+          <span class="section-tag tag-red">Firmy IT</span>
+          <h2 id="companies-h">Firmy, w których odbywały się praktyki</h2>
         </div>
 
-        <div class="firmy-grid">
+        <div class="firma-grid">
+
           <article class="firma-card">
-            <div class="firma-top">
-              <h3>Akdeniz Bilgisayar</h3>
-              <span class="firma-badge">Informatyka</span>
-            </div>
-            <div class="firma-meta">
-              <span>2 pracowników</span>
-              <span>Sprzedaż i serwis komputerowy</span>
-            </div>
-            <p>
-              Akdeniz Bilgisayar to mała lokalna firma działająca w Manavgat, zajmująca się sprzedażą
-              sprzętu komputerowego i akcesoriów oraz obsługą klientów w punkcie stacjonarnym.
-            </p>
-            <p>
-              Profil działalności firmy obejmuje sprzedaż produktów komputerowych oraz usługi związane
-              z podstawową naprawą i serwisem urządzeń.
-            </p>
-            <div class="kierunek-note">
-              W firmie realizowane są zadania związane z obsługą klienta oraz serwisem sprzętu komputerowego,
-              w tym przyjmowanie sprzętu do naprawy, diagnozowanie usterek, wymiana części,
-              czyszczenie komputerów i laptopów oraz instalacja systemów operacyjnych.
-            </div>
-
-            <div class="firma-gallery">
-              <span class="firma-gallery-title">Galeria firmy</span>
-              <div class="firma-gallery-grid">
-                <button class="firma-photo-btn" type="button"
-                        data-photo="zdjecia-erasumus/firmy/akendiz.jpeg"
-                        aria-label="Powiększ zdjęcie 1 firmy Akdeniz Bilgisayar">
-                  <img src="zdjecia-erasumus/firmy/akendiz.jpeg"
-                       alt="Akdeniz Bilgisayar – zdjęcie 1"
-                       class="firma-photo"
-                       loading="lazy"/>
-                  <span class="firma-photo-overlay">Zdjęcie 1</span>
-                </button>
-
-                <button class="firma-photo-btn" type="button"
-                        data-photo="zdjecia-erasumus/firmy/akendiz 2.jpeg"
-                        aria-label="Powiększ zdjęcie 2 firmy Akdeniz Bilgisayar">
-                  <img src="zdjecia-erasumus/firmy/akendiz 2.jpeg"
-                       alt="Akdeniz Bilgisayar – zdjęcie 2"
-                       class="firma-photo"
-                       loading="lazy"/>
-                  <span class="firma-photo-overlay">Zdjęcie 2</span>
-                </button>
-
-                <button class="firma-photo-btn" type="button"
-                        data-photo="zdjecia-erasumus/firmy/akendiz 3.jpeg"
-                        aria-label="Powiększ zdjęcie 3 firmy Akdeniz Bilgisayar">
-                  <img src="zdjecia-erasumus/firmy/akendiz 3.jpeg"
-                       alt="Akdeniz Bilgisayar – zdjęcie 3"
-                       class="firma-photo"
-                       loading="lazy"/>
-                  <span class="firma-photo-overlay">Zdjęcie 3</span>
-                </button>
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>Akdeniz Bilgisayar</h3>
+                <span class="firma-pill">2 pracowników</span>
               </div>
+              <p>
+                Akdeniz Bilgisayar to niewielka, lokalna firma działająca w Manavgat, specjalizująca się w sprzedaży sprzętu komputerowego, akcesoriów oraz podstawowych usługach serwisowych. Przedsiębiorstwo obsługuje klientów w punkcie stacjonarnym, łącząc funkcję sklepu komputerowego z miejscem, w którym można oddać urządzenia do diagnozy, czyszczenia i naprawy. Firma zatrudnia 2 pracowników, z których jeden odpowiada za sprzedaż i kontakt z klientami, a drugi zajmuje się serwisem sprzętu komputerowego i przywracaniem sprawności urządzeń.
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Łukasz Nowak, Patryk Śliż</p>
             </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/akendiz.jpeg","zdjecia-erasumus/firmy/akendiz 2.jpeg","zdjecia-erasumus/firmy/akendiz 3.jpeg"]'
+              aria-label="Otwórz zdjęcia firmy Akdeniz Bilgisayar"
+            >
+              <img src="zdjecia-erasumus/firmy/akendiz.jpeg" alt="Akdeniz Bilgisayar" class="firma-photo">
+            </button>
           </article>
 
           <article class="firma-card">
-            <div class="firma-top">
-              <h3>HI-TECH Bilgisayar</h3>
-              <span class="firma-badge">Informatyka</span>
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>DEES Ses Işık Görüntü Sistemleri</h3>
+                <span class="firma-pill">ok. 10 pracowników</span>
+              </div>
+              <p>
+                DEES Ses Işık Görüntü Sistemleri to firma działająca w branży systemów audiowizualnych, zajmująca się nowoczesnymi rozwiązaniami z zakresu dźwięku, oświetlenia i obrazu. Zespół tworzy kilka do kilkunastu osób, w tym technicy, serwisanci oraz pracownicy odpowiedzialni za montaż i obsługę realizowanych projektów. Firma prowadzi sprzedaż, instalację, konfigurację i serwis systemów nagłośnieniowych, oświetleniowych oraz projekcyjnych, a dodatkowo oferuje wynajem sprzętu i kompleksową obsługę wydarzeń, takich jak koncerty, eventy czy instalacje sceniczne.
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Maciej Dobrzański, Szymon Starobrat</p>
             </div>
-            <div class="firma-meta">
-              <span>4 pracowników</span>
-              <span>Sprzedaż, serwis, modernizacja</span>
-            </div>
-            <p>
-              HI-TECH Bilgisayar to lokalne przedsiębiorstwo zajmujące się sprzedażą komputerów,
-              laptopów, podzespołów oraz akcesoriów komputerowych.
-            </p>
-            <p>
-              Ważnym obszarem działalności firmy jest również serwis sprzętu, obejmujący diagnostykę,
-              naprawę i modernizację, a także instalację i konfigurację oprogramowania.
-            </p>
-            <div class="kierunek-note">
-              Podczas praktyk uczniowie przygotowywali sprzęt do użytkowania, instalowali systemy operacyjne,
-              diagnozowali i usuwali usterki oraz pomagali w wymianie uszkodzonych części i kontakcie z klientami.
-            </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/DEES.jpeg","zdjecia-erasumus/firmy/dees2.jpeg","zdjecia-erasumus/firmy/dees3.png"]'
+              aria-label="Otwórz zdjęcia firmy DEES"
+            >
+              <img src="zdjecia-erasumus/firmy/DEES.jpeg" alt="DEES Ses Işık Görüntü Sistemleri" class="firma-photo">
+            </button>
           </article>
 
           <article class="firma-card">
-            <div class="firma-top">
-              <h3>Manavgat Bilişim</h3>
-              <span class="firma-badge">Informatyka</span>
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>HI-TECH</h3>
+                <span class="firma-pill">4 pracowników</span>
+              </div>
+              <p>
+                HI-TECH Bilgisayar to lokalne przedsiębiorstwo zatrudniające 4 pracowników, które łączy działalność handlową z usługami serwisowymi. Firma zajmuje się sprzedażą komputerów, laptopów, podzespołów oraz akcesoriów komputerowych, a ważnym obszarem jej działalności jest także diagnostyka, naprawa i modernizacja sprzętu. Oprócz tego oferuje instalację i konfigurację oprogramowania, wsparcie techniczne oraz doradztwo, dzięki czemu pełni równocześnie funkcję sklepu komputerowego i punktu serwisowego.
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Emilia Turoń</p>
             </div>
-            <div class="firma-meta">
-              <span>3 pracowników</span>
-              <span>Usługi IT i serwis</span>
-            </div>
-            <p>
-              Manavgat Bilişim to firma informatyczna zatrudniająca trzech pracowników i działająca
-              na lokalnym rynku usług technologicznych.
-            </p>
-            <p>
-              Przedsiębiorstwo koncentruje się na serwisowaniu sprzętu komputerowego, jego naprawie,
-              modernizacji oraz składaniu komputerów dopasowanych do indywidualnych potrzeb użytkowników.
-            </p>
-            <div class="kierunek-note">
-              Firma zajmuje się dokładną diagnostyką usterek, usuwaniem problemów sprzętowych i programowych,
-              wymianą podzespołów, czyszczeniem urządzeń oraz instalacją i konfiguracją systemów.
-            </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/HI-TECH.jpeg","zdjecia-erasumus/firmy/hi-tech2.jpeg","zdjecia-erasumus/firmy/hi-tech3.jpeg"]'
+              aria-label="Otwórz zdjęcia firmy HI-TECH"
+            >
+              <img src="zdjecia-erasumus/firmy/HI-TECH.jpeg" alt="HI-TECH" class="firma-photo">
+            </button>
           </article>
 
           <article class="firma-card">
-            <div class="firma-top">
-              <h3>Pozitif Bilişim ve Güvenlik Sistemleri</h3>
-              <span class="firma-badge">Informatyka</span>
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>Manavgat Bilişim</h3>
+                <span class="firma-pill">3 pracowników</span>
+              </div>
+              <p>
+                Manavgat Bilişim to firma informatyczna z siedzibą w Manavgat, zatrudniająca 3 pracowników i działająca na lokalnym rynku usług technologicznych. Obsługuje zarówno klientów indywidualnych, jak i małe oraz średnie przedsiębiorstwa, dostarczając praktyczne rozwiązania IT dopasowane do ich potrzeb. Zakres działalności firmy obejmuje serwisowanie sprzętu komputerowego, naprawę, modernizację, składanie komputerów na zamówienie, diagnostykę usterek sprzętowych i programowych, wymianę podzespołów oraz czyszczenie i konserwację urządzeń.
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Michał Nosek, Dominik Tobiasz</p>
             </div>
-            <div class="firma-meta">
-              <span>2 pracowników</span>
-              <span>IT i systemy zabezpieczeń</span>
-            </div>
-            <p>
-              Pozitif Bilişim ve Güvenlik Sistemleri to firma technologiczna specjalizująca się
-              w usługach z zakresu informatyki oraz systemów zabezpieczeń.
-            </p>
-            <p>
-              Jej działalność skupia się na serwisowaniu komputerów i laptopów, montażu systemów zabezpieczeń
-              oraz sprzedaży różnych urządzeń i komponentów elektronicznych.
-            </p>
-            <div class="kierunek-note">
-              W ramach praktyk uczniowie zajmowali się testowaniem, czyszczeniem i naprawą sprzętu,
-              a także instalacją komputerów i specjalistycznego oprogramowania w różnych lokalizacjach.
-            </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/Bilisim.jpeg","zdjecia-erasumus/firmy/bilisimi2.jpeg","zdjecia-erasumus/firmy/bilisimi3.jpeg"]'
+              aria-label="Otwórz zdjęcia firmy Manavgat Bilişim"
+            >
+              <img src="zdjecia-erasumus/firmy/Bilisim.jpeg" alt="Manavgat Bilişim" class="firma-photo">
+            </button>
           </article>
 
           <article class="firma-card">
-            <div class="firma-top">
-              <h3>Uzman Bilgisayar</h3>
-              <span class="firma-badge">Informatyka</span>
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>Pozitif Bilişim ve Güvenlik Sistemleri</h3>
+                <span class="firma-pill">2 pracowników</span>
+              </div>
+              <p>
+                Pozitif Bilişim ve Güvenlik Sistemleri to firma technologiczna specjalizująca się w usługach informatycznych oraz systemach zabezpieczeń. Jej działalność koncentruje się na serwisowaniu komputerów i laptopów, montażu systemów zabezpieczeń oraz sprzedaży różnego rodzaju urządzeń i komponentów elektronicznych. Firma zatrudnia 2 osoby i łączy klasyczne usługi IT z pracami instalacyjnymi realizowanymi również poza siedzibą, między innymi w obiektach takich jak hotele.
+
+
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Hubert Dawida, Bartosz Orzechowski</p>
             </div>
-            <div class="firma-meta">
-              <span>2 pracowników</span>
-              <span>Komponenty, składanie, serwis</span>
-            </div>
-            <p>
-              Uzman Bilgisayar to firma informatyczna zajmująca się sprzedażą komponentów komputerowych,
-              składaniem zestawów komputerowych oraz serwisowaniem sprzętu.
-            </p>
-            <p>
-              Świadczy usługi diagnostyki, naprawy oraz instalacji oprogramowania dla komputerów
-              i urządzeń mobilnych.
-            </p>
-            <div class="kierunek-note">
-              Podczas praktyk uczniowie zajmowali się diagnozowaniem usterek, pomocą przy składaniu komputerów,
-              czyszczeniem podzespołów, instalacją systemów oraz wspieraniem prac serwisowych także u klientów.
-            </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/Pozitif.jpeg","zdjecia-erasumus/firmy/pozitif2.jpeg","zdjecia-erasumus/firmy/pozitif3.jpeg"]'
+              aria-label="Otwórz zdjęcia firmy Pozitif Bilişim ve Güvenlik Sistemleri"
+            >
+              <img src="zdjecia-erasumus/firmy/pozitif.jpeg" alt="Pozitif Bilişim ve Güvenlik Sistemleri" class="firma-photo">
+            </button>
           </article>
+
+          <article class="firma-card">
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>Uzman Bilgisayar</h3>
+                <span class="firma-pill">2 pracowników</span>
+              </div>
+              <p>
+                Uzman Bilgisayar to firma informatyczna zajmująca się sprzedażą komponentów komputerowych, składaniem zestawów komputerowych oraz serwisowaniem sprzętu. W ramach swojej działalności świadczy usługi diagnostyki, naprawy i instalacji oprogramowania dla komputerów oraz urządzeń mobilnych, łącząc sprzedaż z codziennym wsparciem technicznym. Firma zatrudnia 2 pracowników i realizuje zarówno standardowe naprawy serwisowe, jak i bardziej praktyczne zadania związane z wymianą podzespołów, testowaniem urządzeń oraz obsługą usterek u klientów.
+
+
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Szymon Hamerla, Nicola Machowska</p>
+            </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/casper.jpeg","zdjecia-erasumus/firmy/caspr2.jpeg","zdjecia-erasumus/firmy/casper3.jpeg"]'
+              aria-label="Otwórz zdjęcia firmy Uzman Bilgisayar"
+            >
+              <img src="zdjecia-erasumus/firmy/casper.jpeg" alt="Uzman Bilgisayar" class="firma-photo">
+            </button>
+          </article>
+
         </div>
       </div>
     </section>
   </main>
 
-
-<footer class="site-footer">
+  <footer class="site-footer">
     <p>Projekt Erasmus+ Manavgat 2025 · Praktyki zawodowe 24.04 – 11.05.2025 · nr 2024-1-PL01-KA121-VET-000203996</p>
     <p>Stronę wykonali: <a href="#" target="_blank" rel="noopener">Patryk Śliż</a> · <a href="#" target="_blank" rel="noopener">Łukasz Nowak</a> · <a href="#" target="_blank" rel="noopener">Bartosz Kliś</a></p>
   </footer>
 
-  <script src="js/main.js"></script>
-
   <div class="photo-modal" id="photoModal" aria-hidden="true">
-    <div class="photo-modal-dialog" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
-      <button class="photo-modal-close" id="photoModalClose" type="button" aria-label="Zamknij podgląd zdjęcia">
-        ×
+    <div class="photo-modal-dialog" role="dialog" aria-modal="true">
+      <button class="photo-modal-close" id="photoModalClose" type="button" aria-label="Zamknij">×</button>
+
+      <button class="photo-modal-nav photo-modal-prev" id="photoModalPrev" type="button" aria-label="Poprzednie zdjęcie">
+        &#10094;
+      </button>
+
+      <button class="photo-modal-nav photo-modal-next" id="photoModalNext" type="button" aria-label="Następne zdjęcie">
+        &#10095;
       </button>
 
       <figure class="photo-modal-figure">
-        <img id="photoModalImage" class="photo-modal-image" src="" alt=""/>
+        <img id="photoModalImage" class="photo-modal-image" src="" alt="">
       </figure>
     </div>
   </div>
+
+  <script src="js/main.js"></script>
 
   <script>
     (function () {
       const modal = document.getElementById('photoModal');
       const modalImage = document.getElementById('photoModalImage');
       const modalClose = document.getElementById('photoModalClose');
-      const triggers = document.querySelectorAll('.firma-photo-btn');
+      const modalPrev = document.getElementById('photoModalPrev');
+      const modalNext = document.getElementById('photoModalNext');
 
-      if (!modal || !modalImage || !modalClose || !triggers.length) return;
+      if (!modal || !modalImage || !modalClose || !modalPrev || !modalNext) return;
 
-      const openModal = (src, altText) => {
-        modalImage.src = src;
-        modalImage.alt = altText || 'Powiększone zdjęcie';
+      const triggerButtons = Array.from(document.querySelectorAll('.firma-photo-trigger, .hero-photo-trigger'));
+      let currentGallery = [];
+      let currentIndex = 0;
+
+      function openModal(images, index = 0) {
+        currentGallery = images;
+        currentIndex = index;
+        updateImage();
         modal.classList.add('is-open');
         modal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
-      };
+      }
 
-      const closeModal = () => {
+      function updateImage() {
+        if (!currentGallery.length) return;
+        modalImage.src = currentGallery[currentIndex];
+        modalImage.alt = '';
+      }
+
+      function closeModal() {
         modal.classList.remove('is-open');
         modal.setAttribute('aria-hidden', 'true');
         modalImage.src = '';
         modalImage.alt = '';
         document.body.style.overflow = '';
-      };
+      }
 
-      triggers.forEach((button) => {
+      function showNext() {
+        if (!currentGallery.length) return;
+        currentIndex = (currentIndex + 1) % currentGallery.length;
+        updateImage();
+      }
+
+      function showPrev() {
+        if (!currentGallery.length) return;
+        currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+        updateImage();
+      }
+
+      triggerButtons.forEach((button) => {
         button.addEventListener('click', () => {
-          const img = button.querySelector('img');
-          const src = button.getAttribute('data-photo') || (img ? img.getAttribute('src') : '');
-          const altText = img ? img.getAttribute('alt') : '';
-          if (!src) return;
-          openModal(src, altText);
+          const images = JSON.parse(button.getAttribute('data-images') || '[]');
+          openModal(images, 0);
         });
       });
 
       modalClose.addEventListener('click', closeModal);
+      modalNext.addEventListener('click', showNext);
+      modalPrev.addEventListener('click', showPrev);
 
       modal.addEventListener('click', (event) => {
         if (event.target === modal) closeModal();
       });
 
       document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && modal.classList.contains('is-open')) {
-          closeModal();
-        }
+        if (!modal.classList.contains('is-open')) return;
+        if (event.key === 'Escape') closeModal();
+        if (event.key === 'ArrowRight') showNext();
+        if (event.key === 'ArrowLeft') showPrev();
       });
     })();
   </script>
+
 </body>
 </html>

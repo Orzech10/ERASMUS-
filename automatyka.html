@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="light">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Praktyki — Automatyka | Erasmus+ Manavgat 2025</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/subpage.css"/>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praktyki Automatyka | Erasmus+ Manavgat 2025</title>
+  <meta name="description" content="Praktyki zawodowe uczniów kierunku automatyka w tureckich firmach serwisowych i technicznych w Manavgat w ramach projektu Erasmus+." />
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/informatyka.css" />
 </head>
 <body>
 
   <header class="site-header" id="top">
-    <nav class="nav-inner">
+    <nav class="nav-inner" aria-label="Główna nawigacja">
       <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus+">
         <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
         <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
@@ -22,16 +22,15 @@
         </div>
       </a>
 
-
-
       <ul class="nav-links" role="list">
         <li class="has-dropdown">
-          <button class="nav-dropdown-btn" aria-expanded="false">Praktyki
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Praktyki
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="6 9 12 15 18 9"/>
             </svg>
           </button>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" role="list">
             <li><a href="informatyka.html">Informatyka</a></li>
             <li><a href="elektronika.html">Elektronika</a></li>
             <li><a href="automatyka.html" class="active">Automatyka</a></li>
@@ -43,85 +42,25 @@
       </ul>
 
       <div class="nav-actions">
-
-        <button class="theme-panel-btn" aria-label="Opcje wyświetlania" id="themePanelBtn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-            <circle cx="12" cy="12" r="3"/>
-          </svg>
-        </button>
-
-        <div class="theme-panel" id="themePanel" aria-hidden="true">
-          <p class="theme-panel__title">
-            Wygląd strony
-            <button class="theme-panel__close" id="themePanelClose" aria-label="Zamknij">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M18 6L6 18M6 6l12 12"/>
-              </svg>
-            </button>
-          </p>
-
-          <div class="theme-panel__section">
-            <p class="theme-panel__label">Motyw</p>
-            <div class="theme-panel__row">
-              <button class="theme-opt" data-theme="light">
-                <span class="theme-opt__preview theme-opt__preview--light"></span>Jasny
-              </button>
-              <button class="theme-opt" data-theme="dark">
-                <span class="theme-opt__preview theme-opt__preview--dark"></span>Ciemny
-              </button>
-              <button class="theme-opt" data-theme="auto">
-                <span class="theme-opt__preview theme-opt__preview--auto"></span>Auto
-              </button>
-            </div>
-          </div>
-
-          <div class="theme-panel__section">
-            <p class="theme-panel__label">Rozmiar tekstu</p>
-            <div class="theme-panel__row">
-              <button class="font-opt" data-size="small">A<small>-</small></button>
-              <button class="font-opt font-opt--active" data-size="normal">A</button>
-              <button class="font-opt" data-size="large">A<sup>+</sup></button>
-            </div>
-          </div>
-
-          <div class="theme-panel__section">
-            <p class="theme-panel__label">Kontrast</p>
-            <div class="theme-panel__row">
-              <button class="contrast-opt" data-contrast="normal">Normalny</button>
-              <button class="contrast-opt" data-contrast="high">Wysoki</button>
-            </div>
-          </div>
-
-          <button class="theme-panel__reset" id="themePanelReset">↺ Resetuj</button>
-        </div>
-
-        <div class="theme-panel-overlay" id="themePanelOverlay"></div>
-
         <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
       </div>
-
-  <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-    <span></span><span></span><span></span>
-  </button>
-</div>
-
     </nav>
 
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <ul role="list">
         <li class="mobile-has-dropdown">
-          <button class="mobile-dropdown-btn" aria-expanded="false">Praktyki
+          <button class="mobile-dropdown-btn" aria-expanded="false">
+            Praktyki
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="6 9 12 15 18 9"/>
             </svg>
           </button>
-          <ul class="mobile-submenu">
+          <ul class="mobile-submenu" aria-hidden="true">
             <li><a href="informatyka.html">Informatyka</a></li>
             <li><a href="elektronika.html">Elektronika</a></li>
-            <li><a href="automatyka.html">Automatyka</a></li>
+            <li><a href="automatyka.html" class="active">Automatyka</a></li>
           </ul>
         </li>
         <li><a href="uczestnicy.html">Uczestnicy</a></li>
@@ -131,358 +70,275 @@
     </div>
   </header>
 
-  <main id="main">
-
-    <section class="page-hero page-hero--blue">
-      <div class="container page-hero-inner">
-        <div class="page-hero-text">
-          <span class="section-tag tag-light">Praktyki zawodowe · Manavgat 2025</span>
-          <h1>Praktyki — <span style="color:#a8d4f0">Automatyka</span></h1>
-          <p>
-            Uczniowie kierunku automatyka odbywali praktyki w tureckich firmach serwisowych i technicznych,
-            poznając diagnostykę, konserwację oraz naprawę urządzeń AGD, klimatyzacyjnych i wentylacyjnych.
+  <main>
+    <section class="hero hero-subpage">
+      <div class="hero-bg-bar" aria-hidden="true"></div>
+      <div class="container hero-inner hero-inner-subpage">
+        <div class="hero-text">
+          <span class="section-tag">Praktyki zawodowe · Automatyka</span>
+          <h1>Praktyki <span class="accent-red">Automatyka</span> <span class="accent-blue">Manavgat 2025</span></h1>
+          <p class="hero-school">Zespół Szkół Elektronicznych w Rzeszowie</p>
+          <p class="hero-lead">
+            Uczniowie kierunku automatyka odbywali praktyki w tureckich firmach serwisowych,
+            poznając organizację pracy technicznej, diagnostykę usterek, obsługę urządzeń AGD
+            oraz serwis systemów klimatyzacyjnych i wentylacyjnych.
           </p>
         </div>
-        <div class="page-hero-img">
-          <div class="img-placeholder-dark" role="img" aria-label="Zdjęcie z praktyk automatyki">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <rect x="3" y="3" width="18" height="18" rx="2"/>
-              <path d="M8 12h8"/>
-              <path d="M12 8v8"/>
-            </svg>
-            <p>Zdjęcie z praktyk</p>
-          </div>
+
+        <div class="hero-img-wrap">
+          <button
+            class="hero-photo-trigger"
+            type="button"
+            data-images='["zdjecia-erasumus/automatyka/hero1.jpeg","zdjecia-erasumus/automatyka/hero2.jpeg","zdjecia-erasumus/automatyka/hero3.jpeg"]'
+            aria-label="Powiększ zdjęcie z praktyk automatyki"
+          >
+            <img
+              src="zdjecia-erasumus/automatyka/hero1.jpeg"
+              alt="Zdjęcie z praktyk automatyki"
+              class="hero-photo"
+            >
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="section-padding bg-light">
+    <section class="section-padding bg-light" aria-labelledby="learn-h">
       <div class="container">
         <div class="section-header center">
-          <span class="section-tag tag-blue">Zakres praktyk</span>
-          <h2>Czego uczyli się uczniowie?</h2>
-          <p class="section-lead">
-            Praktyki z automatyki w Manavgat obejmowały diagnostykę urządzeń, przygotowanie stanowiska pracy,
-            montaż i demontaż elementów, konserwację oraz kontrolę poprawności działania systemów.
-          </p>
+          <span class="section-tag tag-blue">Czego się uczyli?</span>
+          <h2 id="learn-h">Zakres zdobywanych umiejętności</h2>
         </div>
 
-        <div class="praktyki-grid">
-          <div class="praktyki-card">
+        <div class="learn-grid">
+          <article class="learn-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2v6"></path>
-              <path d="M12 16v6"></path>
-              <path d="M4.93 4.93l4.24 4.24"></path>
-              <path d="M14.83 14.83l4.24 4.24"></path>
-              <path d="M2 12h6"></path>
-              <path d="M16 12h6"></path>
-              <path d="M4.93 19.07l4.24-4.24"></path>
-              <path d="M14.83 9.17l4.24-4.24"></path>
+              <path d="M9 12l2 2 4-4"></path>
+              <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
             </svg>
             <h3>Diagnostyka usterek</h3>
-            <p>
-              Uczniowie poznawali rozpoznawanie usterek urządzeń AGD, systemów klimatyzacyjnych
-              i wentylacyjnych oraz przygotowanie sprzętu do dalszej diagnostyki i naprawy.
-            </p>
-          </div>
+            <p>Rozpoznawanie problemów technicznych, wstępne oględziny urządzeń oraz przygotowanie sprzętu do dalszej diagnostyki i naprawy.</p>
+          </article>
 
-          <div class="praktyki-card">
+          <article class="learn-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14.7 6.3a1 1 0 0 0-1.4 0l-7 7a2 2 0 0 0 0 2.8l1.6 1.6a2 2 0 0 0 2.8 0l7-7a1 1 0 0 0 0-1.4l-3-3z"></path>
-              <path d="M16 8l2.5-2.5a2.121 2.121 0 0 1 3 3L19 11"></path>
+              <path d="M12 3v18M3 12h18"></path>
             </svg>
-            <h3>Montaż i wymiana elementów</h3>
-            <p>
-              Podczas praktyk obserwowano i wykonywano proste czynności montażowe, wymianę części,
-              przygotowanie narzędzi oraz organizację stanowiska pracy.
-            </p>
-          </div>
+            <h3>Serwis i konserwacja</h3>
+            <p>Czyszczenie elementów, segregowanie części, przygotowanie materiałów do pracy oraz udział w czynnościach montażowych i serwisowych.</p>
+          </article>
 
-          <div class="praktyki-card">
+          <article class="learn-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 19V5"></path>
-              <path d="M10 19V8"></path>
-              <path d="M14 19v-6"></path>
-              <path d="M18 19v-9"></path>
-            </svg>
-            <h3>Kontrola i testowanie</h3>
-            <p>
-              Ważnym elementem praktyk była kontrola poprawności działania urządzeń po naprawie,
-              testowanie podzespołów oraz sprawdzanie bezpieczeństwa pracy systemów.
-            </p>
-          </div>
-
-          <div class="praktyki-card">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <path d="M4 7h16M4 12h10M4 17h7"></path>
             </svg>
             <h3>Dokumentacja techniczna</h3>
-            <p>
-              Uczniowie korzystali z dokumentacji technicznej, katalogów części zamiennych
-              oraz poznawali organizację pracy serwisu i znaczenie dokładności w działaniach technicznych.
-            </p>
-          </div>
+            <p>Korzystanie z katalogów części zamiennych, dokumentacji technicznej oraz zasad organizacji pracy w profesjonalnym serwisie.</p>
+          </article>
+
+          <article class="learn-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 7h10v10H7z"></path>
+              <path d="M3 10V8a2 2 0 0 1 2-2h2M21 10V8a2 2 0 0 0-2-2h-2M3 14v2a2 2 0 0 0 2 2h2M21 14v2a2 2 0 0 1-2 2h-2"></path>
+            </svg>
+            <h3>Bezpieczeństwo i organizacja</h3>
+            <p>Przygotowanie stanowiska pracy, właściwe użycie narzędzi, kontrola poprawności działania urządzeń po naprawie i przestrzeganie zasad bezpieczeństwa.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section-padding">
+    <section class="section-padding bg-offset" aria-labelledby="companies-h">
       <div class="container">
         <div class="section-header center">
-          <span class="section-tag tag-red">Podział firm</span>
-          <h2>Firmy związane z automatyką i serwisem</h2>
-          <p class="section-lead">
-            Uczniowie kierunku automatyka odbywali praktyki w firmach zajmujących się
-            serwisem urządzeń AGD oraz montażem i obsługą instalacji klimatyzacyjnych i wentylacyjnych.
-          </p>
+          <span class="section-tag tag-red">Firmy automatyki</span>
+          <h2 id="companies-h">Firmy, w których odbywały się praktyki</h2>
         </div>
 
-        <div class="firmy-grid">
+        <div class="firma-grid">
+
           <article class="firma-card">
-            <div class="firma-top">
-              <h3>Beko Arçelik Yetkili Servisi</h3>
-              <span class="firma-badge">Automatyka</span>
-            </div>
-
-            <div class="firma-meta">
-              <span>około 40 pracowników</span>
-              <span>Autoryzowany serwis AGD</span>
-            </div>
-
-            <p>
-              Beko Arçelik Yetkili Servisi to autoryzowany serwis zajmujący się diagnostyką,
-              naprawą oraz obsługą urządzeń AGD marki Beko i Arçelik.
-            </p>
-
-            <p>
-              Firma prowadzi działalność usługowo-serwisową obejmującą przyjmowanie zgłoszeń,
-              ocenę stanu technicznego urządzeń, dobór części zamiennych, wykonywanie napraw
-              oraz testowanie sprzętu po zakończeniu prac.
-            </p>
-
-            <div class="kierunek-note">
-              Firma obsługuje między innymi pralki, zmywarki, lodówki, piekarniki oraz inne urządzenia
-              gospodarstwa domowego, a ważnym elementem pracy jest korzystanie z dokumentacji technicznej
-              i części zgodnych z wymaganiami producenta.
-            </div>
-
-            <div class="firma-gallery">
-              <span class="firma-gallery-title">Galeria firmy</span>
-
-              <div class="firma-gallery-grid">
-                <button
-                  class="firma-photo-btn"
-                  type="button"
-                  data-photo="TU_WPISZ_SCIEZKE_DO_BEKO_1"
-                  data-caption="Beko Arçelik Yetkili Servisi – zdjęcie 1"
-                  aria-label="Powiększ zdjęcie 1 firmy Beko Arçelik Yetkili Servisi"
-                >
-                  <img
-                    src="TU_WPISZ_SCIEZKE_DO_BEKO_1"
-                    alt="Beko Arçelik Yetkili Servisi – zdjęcie 1"
-                    class="firma-photo"
-                    loading="lazy"
-                  />
-                  <span class="firma-photo-overlay">Zdjęcie 1</span>
-                </button>
-
-                <button
-                  class="firma-photo-btn"
-                  type="button"
-                  data-photo="TU_WPISZ_SCIEZKE_DO_BEKO_2"
-                  data-caption="Beko Arçelik Yetkili Servisi – zdjęcie 2"
-                  aria-label="Powiększ zdjęcie 2 firmy Beko Arçelik Yetkili Servisi"
-                >
-                  <img
-                    src="TU_WPISZ_SCIEZKE_DO_BEKO_2"
-                    alt="Beko Arçelik Yetkili Servisi – zdjęcie 2"
-                    class="firma-photo"
-                    loading="lazy"
-                  />
-                  <span class="firma-photo-overlay">Zdjęcie 2</span>
-                </button>
-
-                <button
-                  class="firma-photo-btn"
-                  type="button"
-                  data-photo="TU_WPISZ_SCIEZKE_DO_BEKO_3"
-                  data-caption="Beko Arçelik Yetkili Servisi – zdjęcie 3"
-                  aria-label="Powiększ zdjęcie 3 firmy Beko Arçelik Yetkili Servisi"
-                >
-                  <img
-                    src="TU_WPISZ_SCIEZKE_DO_BEKO_3"
-                    alt="Beko Arçelik Yetkili Servisi – zdjęcie 3"
-                    class="firma-photo"
-                    loading="lazy"
-                  />
-                  <span class="firma-photo-overlay">Zdjęcie 3</span>
-                </button>
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>Beko Arçelik Yetkili Servisi</h3>
+                <span class="firma-pill">około 40 pracowników</span>
               </div>
+              <p>
+                Beko Arçelik Yetkili Servisi to autoryzowany serwis zajmujący się diagnostyką,
+                naprawą oraz obsługą urządzeń AGD marki Beko i Arçelik. Firma prowadzi działalność
+                usługowo-serwisową obejmującą przyjmowanie zgłoszeń, ocenę stanu technicznego urządzeń,
+                dobór części zamiennych, wykonywanie napraw oraz testowanie sprzętu po zakończeniu prac.
+                Obsługuje między innymi pralki, zmywarki, lodówki, piekarniki oraz inne urządzenia
+                gospodarstwa domowego.
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Michał Bąkowski, Maciej Bogusz </p>
             </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/beko1.jpeg","zdjecia-erasumus/firmy/beko2.jpeg","zdjecia-erasumus/firmy/beko3.jpeg"]'
+              aria-label="Otwórz zdjęcia firmy Beko Arçelik Yetkili Servisi"
+            >
+              <img src="zdjecia-erasumus/firmy/beko1.jpeg" alt="Beko Arçelik Yetkili Servisi" class="firma-photo">
+            </button>
           </article>
 
           <article class="firma-card">
-            <div class="firma-top">
-              <h3>Gezer Teknik İklimlendirme Bosch Yetkili Servis</h3>
-              <span class="firma-badge">Automatyka</span>
-            </div>
-
-            <div class="firma-meta">
-              <span>20 pracowników</span>
-              <span>Klimatyzacja i wentylacja</span>
-            </div>
-
-            <p>
-              Gezer Teknik İklimlendirme Bosch Yetkili Servis to firma zatrudniająca 20 pracowników,
-              prowadząca działalność w zakresie montażu, demontażu oraz serwisu układów
-              klimatyzacyjnych i wentylacyjnych.
-            </p>
-
-            <p>
-              Do świadczonych usług należą instalacja, konserwacja, przeglądy oraz naprawa urządzeń.
-              W ramach praktyk uczniowie poznawali również przygotowanie stanowiska pracy,
-              narzędzi i materiałów niezbędnych do wykonywania zadań technicznych.
-            </p>
-
-            <div class="kierunek-note">
-              Zakres wykonywanych czynności obejmował przeglądy techniczne, konserwację, wykrywanie usterek,
-              naprawę urządzeń i instalacji oraz kontrolę poprawności działania systemów po zakończeniu prac.
-            </div>
-
-            <div class="firma-gallery">
-              <span class="firma-gallery-title">Galeria firmy</span>
-
-              <div class="firma-gallery-grid">
-                <button
-                  class="firma-photo-btn"
-                  type="button"
-                  data-photo="TU_WPISZ_SCIEZKE_DO_GEZER_1"
-                  data-caption="Gezer Teknik İklimlendirme Bosch Yetkili Servis – zdjęcie 1"
-                  aria-label="Powiększ zdjęcie 1 firmy Gezer Teknik İklimlendirme Bosch Yetkili Servis"
-                >
-                  <img
-                    src="TU_WPISZ_SCIEZKE_DO_GEZER_1"
-                    alt="Gezer Teknik İklimlendirme Bosch Yetkili Servis – zdjęcie 1"
-                    class="firma-photo"
-                    loading="lazy"
-                  />
-                  <span class="firma-photo-overlay">Zdjęcie 1</span>
-                </button>
-
-                <button
-                  class="firma-photo-btn"
-                  type="button"
-                  data-photo="TU_WPISZ_SCIEZKE_DO_GEZER_2"
-                  data-caption="Gezer Teknik İklimlendirme Bosch Yetkili Servis – zdjęcie 2"
-                  aria-label="Powiększ zdjęcie 2 firmy Gezer Teknik İklimlendirme Bosch Yetkili Servis"
-                >
-                  <img
-                    src="TU_WPISZ_SCIEZKE_DO_GEZER_2"
-                    alt="Gezer Teknik İklimlendirme Bosch Yetkili Servis – zdjęcie 2"
-                    class="firma-photo"
-                    loading="lazy"
-                  />
-                  <span class="firma-photo-overlay">Zdjęcie 2</span>
-                </button>
-
-                <button
-                  class="firma-photo-btn"
-                  type="button"
-                  data-photo="TU_WPISZ_SCIEZKE_DO_GEZER_3"
-                  data-caption="Gezer Teknik İklimlendirme Bosch Yetkili Servis – zdjęcie 3"
-                  aria-label="Powiększ zdjęcie 3 firmy Gezer Teknik İklimlendirme Bosch Yetkili Servis"
-                >
-                  <img
-                    src="TU_WPISZ_SCIEZKE_DO_GEZER_3"
-                    alt="Gezer Teknik İklimlendirme Bosch Yetkili Servis – zdjęcie 3"
-                    class="firma-photo"
-                    loading="lazy"
-                  />
-                  <span class="firma-photo-overlay">Zdjęcie 3</span>
-                </button>
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>Beko Arçelik Yetkili Servisi</h3>
+                <span class="firma-pill">około 40 pracowników</span>
               </div>
+              <p>
+                Drugi punkt praktyk w Beko Arçelik Yetkili Servisi również działa jako autoryzowany
+                serwis sprzętu AGD, koncentrujący się na diagnozowaniu usterek, naprawach, konserwacji
+                urządzeń oraz wsparciu technicznym dla klientów. Zespół tworzą technicy serwisowi
+                oraz pracownicy odpowiedzialni za organizację pracy i kontakt z klientami. Ważnym
+                elementem działalności jest korzystanie z dokumentacji technicznej oraz części zgodnych
+                z wytycznymi producenta, co wpływa na jakość i bezpieczeństwo świadczonych usług.
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Filip Winiewski, Dawid Woźny</p>
             </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/beko4.jpeg","zdjecia-erasumus/firmy/beko5.jpeg","zdjecia-erasumus/firmy/beko6.jpeg"]'
+              aria-label="Otwórz zdjęcia drugiego miejsca praktyk Beko Arçelik Yetkili Servisi"
+            >
+              <img src="zdjecia-erasumus/firmy/beko4.jpeg" alt="Beko Arçelik Yetkili Servisi - drugie miejsce praktyk" class="firma-photo">
+            </button>
           </article>
+
+          <article class="firma-card">
+            <div class="firma-content">
+              <div class="firma-head">
+                <h3>Gezer Teknik İklimlendirme (Bosch Yetkili Servis)</h3>
+                <span class="firma-pill">20 pracowników</span>
+              </div>
+              <p>
+                Gezer Teknik İklimlendirme (Bosch Yetkili Servis) to firma zatrudniająca 20 pracowników,
+                prowadząca działalność w zakresie montażu, demontażu oraz serwisu układów klimatyzacyjnych
+                i wentylacyjnych. Do świadczonych usług należą instalacja, konserwacja, przeglądy techniczne
+                oraz naprawa urządzeń i instalacji. Firma realizuje prace serwisowe wymagające dobrej
+                organizacji stanowiska pracy, przygotowania narzędzi i materiałów oraz kontroli poprawności
+                działania systemów po zakończeniu prac.
+              </p>
+              <p class="firma-students"><strong>Uczniowie:</strong> Bartosz Kliś, Zuzanna Siekaniec</p>
+            </div>
+
+            <button
+              class="firma-photo-trigger"
+              type="button"
+              data-images='["zdjecia-erasumus/firmy/gezer1.jpeg","zdjecia-erasumus/firmy/gezer2.jpeg","zdjecia-erasumus/firmy/gezer3.jpeg"]'
+              aria-label="Otwórz zdjęcia firmy Gezer Teknik İklimlendirme"
+            >
+              <img src="zdjecia-erasumus/firmy/gezer1.jpeg" alt="Gezer Teknik İklimlendirme" class="firma-photo">
+            </button>
+          </article>
+
         </div>
       </div>
     </section>
-
-    
+  </main>
 
   <footer class="site-footer">
     <p>Projekt Erasmus+ Manavgat 2025 · Praktyki zawodowe 24.04 – 11.05.2025 · nr 2024-1-PL01-KA121-VET-000203996</p>
     <p>Stronę wykonali: <a href="#" target="_blank" rel="noopener">Patryk Śliż</a> · <a href="#" target="_blank" rel="noopener">Łukasz Nowak</a> · <a href="#" target="_blank" rel="noopener">Bartosz Kliś</a></p>
   </footer>
-  <script src="js/main.js"></script>
-</body>
-</html>
-
-
-  <script src="js/main.js"></script>
 
   <div class="photo-modal" id="photoModal" aria-hidden="true">
-    <div class="photo-modal-dialog" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
-      <button class="photo-modal-close" id="photoModalClose" type="button" aria-label="Zamknij podgląd zdjęcia">
-        ×
+    <div class="photo-modal-dialog" role="dialog" aria-modal="true">
+      <button class="photo-modal-close" id="photoModalClose" type="button" aria-label="Zamknij">×</button>
+
+      <button class="photo-modal-nav photo-modal-prev" id="photoModalPrev" type="button" aria-label="Poprzednie zdjęcie">
+        &#10094;
+      </button>
+
+      <button class="photo-modal-nav photo-modal-next" id="photoModalNext" type="button" aria-label="Następne zdjęcie">
+        &#10095;
       </button>
 
       <figure class="photo-modal-figure">
-        <img id="photoModalImage" class="photo-modal-image" src="" alt=""/>
-        <figcaption id="photoModalCaption" class="photo-modal-caption"></figcaption>
+        <img id="photoModalImage" class="photo-modal-image" src="" alt="">
       </figure>
     </div>
   </div>
+
+  <script src="js/main.js"></script>
 
   <script>
     (function () {
       const modal = document.getElementById('photoModal');
       const modalImage = document.getElementById('photoModalImage');
-      const modalCaption = document.getElementById('photoModalCaption');
       const modalClose = document.getElementById('photoModalClose');
-      const triggers = document.querySelectorAll('.firma-photo-btn');
+      const modalPrev = document.getElementById('photoModalPrev');
+      const modalNext = document.getElementById('photoModalNext');
 
-      if (!modal || !modalImage || !modalCaption || !modalClose || !triggers.length) return;
+      if (!modal || !modalImage || !modalClose || !modalPrev || !modalNext) return;
 
-      const openModal = (src, caption) => {
-        modalImage.src = src;
-        modalImage.alt = caption || 'Powiększone zdjęcie';
-        modalCaption.textContent = caption || '';
+      const triggerButtons = Array.from(document.querySelectorAll('.firma-photo-trigger, .hero-photo-trigger'));
+      let currentGallery = [];
+      let currentIndex = 0;
+
+      function openModal(images, index = 0) {
+        currentGallery = images;
+        currentIndex = index;
+        updateImage();
         modal.classList.add('is-open');
         modal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
-      };
+      }
 
-      const closeModal = () => {
+      function updateImage() {
+        if (!currentGallery.length) return;
+        modalImage.src = currentGallery[currentIndex];
+        modalImage.alt = '';
+      }
+
+      function closeModal() {
         modal.classList.remove('is-open');
         modal.setAttribute('aria-hidden', 'true');
         modalImage.src = '';
         modalImage.alt = '';
-        modalCaption.textContent = '';
         document.body.style.overflow = '';
-      };
+      }
 
-      triggers.forEach((button) => {
+      function showNext() {
+        if (!currentGallery.length) return;
+        currentIndex = (currentIndex + 1) % currentGallery.length;
+        updateImage();
+      }
+
+      function showPrev() {
+        if (!currentGallery.length) return;
+        currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+        updateImage();
+      }
+
+      triggerButtons.forEach((button) => {
         button.addEventListener('click', () => {
-          const src = button.getAttribute('data-photo');
-          const caption = button.getAttribute('data-caption') || '';
-          if (!src) return;
-          openModal(src, caption);
+          const images = JSON.parse(button.getAttribute('data-images') || '[]');
+          openModal(images, 0);
         });
       });
 
       modalClose.addEventListener('click', closeModal);
+      modalNext.addEventListener('click', showNext);
+      modalPrev.addEventListener('click', showPrev);
 
       modal.addEventListener('click', (event) => {
         if (event.target === modal) closeModal();
       });
 
       document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && modal.classList.contains('is-open')) {
-          closeModal();
-        }
+        if (!modal.classList.contains('is-open')) return;
+        if (event.key === 'Escape') closeModal();
+        if (event.key === 'ArrowRight') showNext();
+        if (event.key === 'ArrowLeft') showPrev();
       });
     })();
   </script>
+
 </body>
 </html>
