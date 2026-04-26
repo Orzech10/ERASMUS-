@@ -7,22 +7,29 @@
   <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/subpage.css"/>
+  <link rel="stylesheet" href="css/aktywnosci.css"/>
 </head>
 <body>
 
   <header class="site-header" id="top">
     <nav class="nav-inner" aria-label="Główna nawigacja">
       <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus+">
-  <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
-  <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
-  <div class="nav-logo-text">
-    <strong>MANAVGAT</strong>
-    <span>Erasmus+ 2025</span>
-  </div>
-</a>
+        <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
+        <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
+        <div class="nav-logo-text">
+          <strong>MANAVGAT</strong>
+          <span>Erasmus+ 2025</span>
+        </div>
+      </a>
+
       <ul class="nav-links" role="list">
         <li class="has-dropdown">
-          <button class="nav-dropdown-btn" aria-expanded="false">Praktyki <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <button class="nav-dropdown-btn" aria-expanded="false">
+            Praktyki
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
           <ul class="dropdown-menu" role="list">
             <li><a href="informatyka.html">Informatyka</a></li>
             <li><a href="elektronika.html">Elektronika</a></li>
@@ -33,15 +40,29 @@
         <li><a href="aktywnosci.html" class="active">Aktywności</a></li>
         <li><a href="organizatorzy.html">Organizatorzy</a></li>
       </ul>
+
       <div class="nav-actions">
-  <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-    <span></span><span></span><span></span>
-  </button>
-</div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
+
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <ul role="list">
-        <li class="mobile-has-dropdown"><button class="mobile-dropdown-btn" aria-expanded="false">Praktyki <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button><ul class="mobile-submenu"><li><a href="informatyka.html">Informatyka</a></li><li><a href="elektronika.html">Elektronika</a></li><li><a href="automatyka.html">Automatyka</a></li></ul></li>
+        <li class="mobile-has-dropdown">
+          <button class="mobile-dropdown-btn" aria-expanded="false">
+            Praktyki
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <ul class="mobile-submenu">
+            <li><a href="informatyka.html">Informatyka</a></li>
+            <li><a href="elektronika.html">Elektronika</a></li>
+            <li><a href="automatyka.html">Automatyka</a></li>
+          </ul>
+        </li>
         <li><a href="uczestnicy.html">Uczestnicy</a></li>
         <li><a href="aktywnosci.html">Aktywności</a></li>
         <li><a href="organizatorzy.html">Organizatorzy</a></li>
@@ -55,13 +76,17 @@
         <div class="page-hero-text">
           <span class="section-tag tag-light">Czas wolny i wycieczki</span>
           <h1>Aktywności</h1>
-          <p>Oprócz praktyk zawodowych uczniowie mieli szansę poznać kulturę, historię i piękno Turcji — od starożytnych ruin po śródziemnomorskie plaże.</p>
+          <p>
+            Oprócz praktyk zawodowych uczniowie mieli szansę poznać kulturę, historię i codzienne życie Turcji.
+            Wyjazd obejmował wspólne wyjścia, aktywności sportowe, spacery po nadmorskich miejscowościach
+            oraz odkrywanie najciekawszych miejsc w regionie Manavgat i Antalya.
+          </p>
         </div>
+
         <div class="page-hero-img">
-          <div class="img-placeholder-dark" role="img" aria-label="Zdjęcie z aktywności">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            <p>Zdjęcie z aktywności</p>
-          </div>
+          <button class="hero-image-btn gallery-open" type="button" data-index="0" aria-label="Powiększ zdjęcie główne">
+            <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg" alt="Zdjęcie z aktywności" class="hero-activity-photo" />
+          </button>
         </div>
       </div>
     </section>
@@ -71,62 +96,352 @@
         <div class="section-header center">
           <span class="section-tag tag-blue">Program kulturalny</span>
           <h2>Co robiliśmy poza pracą?</h2>
-          <p class="section-lead">Wyjazd to nie tylko praktyki — to też niezapomniane doświadczenia kulturowe w jednym z najpiękniejszych regionów Turcji.</p>
+          <p class="section-lead">
+            Czas wolny był ważną częścią całego wyjazdu. Dzięki wspólnym wyjściom uczestnicy mogli lepiej się poznać,
+            odpocząć po praktykach zawodowych i zobaczyć miejsca, które pokazują zarówno turystyczne,
+            jak i codzienne oblicze regionu.
+          </p>
         </div>
-        <div class="activity-grid">
-          <div class="activity-card activity-card--featured">
-            <div class="activity-img-ph" role="img" aria-label="Wycieczka">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-              <span>Zdjęcie aktywności</span>
-            </div>
+
+        <div class="activity-grid activity-grid--photos">
+          <article class="activity-card activity-card--featured">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="1" aria-label="Powiększ zdjęcie Antalyi">
+              <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/molo.jpeg" alt="Zwiedzanie Antalyi" class="activity-photo">
+            </button>
             <div class="activity-body">
               <span class="activity-tag">Wycieczka</span>
               <h3>Zwiedzanie Antalyi</h3>
-              <p>Historyczne centrum miasta, starożytna Kaleici, wieża Hidirlik i słynne wodospady Düden — prawdziwa lekcja historii i kultury śródziemnomorskiej.</p>
+              <p>
+                Jednym z najciekawszych punktów programu było wspólne zwiedzanie Antalyi. Uczniowie mieli okazję
+                zobaczyć nadmorską część miasta, przespacerować się po jego klimatycznych uliczkach i poczuć atmosferę
+                jednego z najważniejszych ośrodków turystycznych południowej Turcji.
+              </p>
             </div>
-          </div>
-          <div class="activity-card">
-            <div class="activity-img-ph" role="img" aria-label="Ruiny Aspendos"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div>
-            <div class="activity-body"><span class="activity-tag">Kultura</span><h3>Ruiny Aspendos</h3><p>Jeden z najlepiej zachowanych teatrów antycznych na świecie — przeszłość sięgająca II wieku n.e.</p></div>
-          </div>
-          <div class="activity-card">
-            <div class="activity-img-ph" role="img" aria-label="Plaże Side"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div>
-            <div class="activity-body"><span class="activity-tag">Wypoczynek</span><h3>Plaże Side</h3><p>Czas wolny nad turkusowym Morzem Śródziemnym w jednym z najpopularniejszych kurortów regionu Antalya.</p></div>
-          </div>
-          <div class="activity-card">
-            <div class="activity-img-ph" role="img" aria-label="Bazar w Manavgat"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div>
-            <div class="activity-body"><span class="activity-tag">Kultura</span><h3>Bazar w Manavgat</h3><p>Lokalne targi z przyprawami, tkaniną i pamiątkami — bezpośrednie zderzenie z turecką kulturą handlu.</p></div>
-          </div>
-          <div class="activity-card">
-            <div class="activity-img-ph" role="img" aria-label="Wodospad Manavgat"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div>
-            <div class="activity-body"><span class="activity-tag">Przyroda</span><h3>Wodospad Manavgat</h3><p>Imponujący wodospad na rzece Manavgat — jedno z najbardziej malowniczych miejsc w okolicach miasta.</p></div>
-          </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="2" aria-label="Powiększ zdjęcie starego miasta Side">
+              <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/bickikoloseum.jpeg" alt="Stare miasto Side" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Historia</span>
+              <h3>Stare miasto Side</h3>
+              <p>
+                Podczas pobytu uczestnicy odwiedzali również historyczne Side. Spacer po tej części wybrzeża pozwalał
+                połączyć wypoczynek z poznawaniem zabytkowego charakteru miejsca, które do dziś zachowuje wyjątkowy,
+                śródziemnomorski klimat.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="3" aria-label="Powiększ zdjęcie wodospadu">
+              <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="Wodospad Manavgat" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Przyroda</span>
+              <h3>Wodospad Manavgat</h3>
+              <p>
+                Wycieczka nad wodospad była świetną okazją do odpoczynku po intensywnych dniach praktyk. To miejsce
+                pozwoliło zobaczyć bardziej naturalne oblicze regionu, spędzić czas w spokojniejszej scenerii
+                i zrobić wiele wspólnych zdjęć.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="4" aria-label="Powiększ zdjęcie galerii handlowej">
+              <img src="zdjecia-erasumus/czas_wolny/hotel/amourprzed.jpeg" alt="Galeria handlowa" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Miasto</span>
+              <h3>Wyjście do galerii handlowej</h3>
+              <p>
+                W planie pobytu znalazł się także czas na bardziej swobodne wyjścia do galerii handlowej. Dzięki temu
+                można było zrobić zakupy, kupić pamiątki i jednocześnie zobaczyć nowocześniejszą część miasta
+                oraz codzienne życie mieszkańców.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="5" aria-label="Powiększ zdjęcie turnieju piłki">
+              <img src="zdjecia-erasumus/czas_wolny/piwnica/pilakrzyki.jpeg" alt="Turniej piłki nożnej" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Sport</span>
+              <h3>Turniej piłki nożnej</h3>
+              <p>
+                Jedną z najbardziej angażujących aktywności był turniej piłki nożnej. Wspólna gra integrowała grupę,
+                budowała dobrą atmosferę i pozwalała spędzić czas aktywnie, a jednocześnie w luźniejszej formie
+                niż podczas codziennych obowiązków zawodowych.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="6" aria-label="Powiększ zdjęcie ping-ponga">
+              <img src="zdjecia-erasumus/czas_wolny/hotel/lotnisko.jpeg" alt="Turniej ping-ponga" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Sport</span>
+              <h3>Turniej ping-ponga</h3>
+              <p>
+                Turniej ping-ponga był świetnym urozmaiceniem popołudniowego czasu wolnego. Taka forma aktywności dawała
+                uczestnikom okazję do zabawy, zdrowej rywalizacji i wspólnego spędzenia czasu po zakończonych praktykach.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="7" aria-label="Powiększ zdjęcie bazaru">
+              <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg" alt="Bazar w Manavgat" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Kultura</span>
+              <h3>Bazar w Manavgat</h3>
+              <p>
+                Wizyta na lokalnym bazarze była jednym z ciekawszych doświadczeń kulturowych. Można było zobaczyć sposób
+                handlu, lokalne produkty, przyprawy i pamiątki, a także poczuć atmosferę codziennego życia mieszkańców
+                regionu.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="8" aria-label="Powiększ zdjęcie plaży">
+              <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/molo.jpeg" alt="Plaża i nadmorski odpoczynek" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Relaks</span>
+              <h3>Plaże i nadmorski odpoczynek</h3>
+              <p>
+                Pobyt w regionie Antalya dawał również możliwość spędzania czasu nad morzem. Chwile odpoczynku przy plaży
+                pozwalały zregenerować siły po praktykach, nacieszyć się krajobrazem i po prostu pobyć razem
+                w mniej formalnej atmosferze.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="9" aria-label="Powiększ zdjęcie spaceru">
+              <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg" alt="Wieczorne spacery" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Integracja</span>
+              <h3>Wieczorne spacery po okolicy</h3>
+              <p>
+                Spokojne wieczorne spacery były ważną częścią codzienności podczas wyjazdu. To właśnie wtedy najczęściej
+                pojawiał się czas na rozmowy, lepsze poznawanie się i budowanie relacji, które później przekładały się
+                również na współpracę w czasie praktyk.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="10" aria-label="Powiększ zdjęcie wspólnego wyjścia">
+              <img src="zdjecia-erasumus/czas_wolny/hotel/amourprzed.jpeg" alt="Wspólne wyjścia grupowe" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Grupa</span>
+              <h3>Wspólne wyjścia i integracja</h3>
+              <p>
+                Oprócz zaplanowanych atrakcji był też czas na wspólne wyjścia w mniejszych grupach. Dzięki nim wyjazd
+                miał nie tylko wymiar zawodowy, ale również społeczny, a uczestnicy mogli wrócić z Turcji
+                z wieloma wspomnieniami.
+              </p>
+            </div>
+          </article>
+
+          <article class="activity-card">
+            <button class="activity-photo-btn gallery-open" type="button" data-index="11" aria-label="Powiększ zdjęcie odpoczynku">
+              <img src="zdjecia-erasumus/czas_wolny/hotel/lotnisko.jpeg" alt="Odpoczynek po praktykach" class="activity-photo">
+            </button>
+            <div class="activity-body">
+              <span class="activity-tag">Relaks</span>
+              <h3>Czas na odpoczynek po praktykach</h3>
+              <p>
+                Po każdym dniu pełnym nowych obowiązków ważne było również znalezienie chwili na odpoczynek. Taki spokojniejszy
+                czas pomagał zebrać siły na kolejne dni, a jednocześnie dawał przestrzeń do rozmów
+                i podsumowania zdobytych doświadczeń.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- GALERIA -->
     <section class="section-padding bg-navy">
       <div class="container">
         <div class="section-header center">
           <span class="section-tag tag-light">Fotorelacja</span>
-          <h2 class="text-light">Zdjęcia z aktywności</h2>
+          <h2 class="text-light">Galeria zdjęć</h2>
+          <p class="section-lead text-light-muted">
+            Kliknij zdjęcie, aby otworzyć pełny widok. Najważniejsze kadry są większe,
+            a pozostałe zdjęcia zostały ułożone w mniejsze kafelki obok siebie.
+          </p>
         </div>
-        <div class="gallery-grid">
-          <div class="gal-item gal-large"><div class="gal-ph"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Główne zdjęcie</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div></div>
-          <div class="gal-item"><div class="gal-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Zdjęcie</span></div></div>
+
+        <div class="gallery-mosaic">
+          <button class="gallery-open mosaic-item mosaic-item--hero" type="button" data-index="0" aria-label="Otwórz zdjęcie 1">
+            <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--small-top" type="button" data-index="1" aria-label="Otwórz zdjęcie 2">
+            <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/molo.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--small-middle" type="button" data-index="2" aria-label="Otwórz zdjęcie 3">
+            <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/bickikoloseum.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--bottom-left" type="button" data-index="3" aria-label="Otwórz zdjęcie 4">
+            <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--bottom-center" type="button" data-index="4" aria-label="Otwórz zdjęcie 5">
+            <img src="zdjecia-erasumus/czas_wolny/hotel/amourprzed.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--bottom-right" type="button" data-index="5" aria-label="Otwórz zdjęcie 6">
+            <img src="zdjecia-erasumus/czas_wolny/piwnica/pilakrzyki.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--thumb" type="button" data-index="6" aria-label="Otwórz zdjęcie 7">
+            <img src="zdjecia-erasumus/czas_wolny/hotel/lotnisko.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--thumb" type="button" data-index="7" aria-label="Otwórz zdjęcie 8">
+            <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--thumb" type="button" data-index="8" aria-label="Otwórz zdjęcie 9">
+            <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/molo.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--thumb" type="button" data-index="9" aria-label="Otwórz zdjęcie 10">
+            <img src="zdjecia-erasumus/czas_wolny/wyjsciaside/bickikoloseum.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--thumb" type="button" data-index="10" aria-label="Otwórz zdjęcie 11">
+            <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--thumb" type="button" data-index="11" aria-label="Otwórz zdjęcie 12">
+            <img src="zdjecia-erasumus/czas_wolny/hotel/amourprzed.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--thumb" type="button" data-index="12" aria-label="Otwórz zdjęcie 13">
+            <img src="zdjecia-erasumus/czas_wolny/piwnica/pilakrzyki.jpeg" alt="">
+          </button>
+
+          <button class="gallery-open mosaic-item mosaic-item--thumb" type="button" data-index="13" aria-label="Otwórz zdjęcie 14">
+            <img src="zdjecia-erasumus/czas_wolny/hotel/lotnisko.jpeg" alt="">
+          </button>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-  <p>Projekt Erasmus+ Manavgat 2025 · Praktyki zawodowe 24.04 – 11.05.2025 · nr 2024-1-PL01-KA121-VET-000203996</p>
-  <p>Stronę wykonali: <a href="#" target="_blank" rel="noopener">Patryk Śliż</a> · <a href="#" target="_blank" rel="noopener">Łukasz Nowak</a> · <a href="#" target="_blank" rel="noopener">Bartosz Kliś</a></p>
-</footer>
+    <p>Projekt Erasmus+ Manavgat 2025 · Praktyki zawodowe 24.04 – 11.05.2025 · nr 2024-1-PL01-KA121-VET-000203996</p>
+    <p>Stronę wykonali: <a href="#" target="_blank" rel="noopener">Patryk Śliż</a> · <a href="#" target="_blank" rel="noopener">Łukasz Nowak</a> · <a href="#" target="_blank" rel="noopener">Bartosz Kliś</a></p>
+  </footer>
+
+  <div class="photo-modal" id="photoModal" aria-hidden="true">
+    <div class="photo-modal-dialog" role="dialog" aria-modal="true" aria-label="Galeria zdjęć">
+      <button class="photo-modal-close" id="photoModalClose" type="button" aria-label="Zamknij galerię">×</button>
+      <button class="photo-modal-nav photo-modal-prev" id="photoModalPrev" type="button" aria-label="Poprzednie zdjęcie">&#10094;</button>
+      <button class="photo-modal-nav photo-modal-next" id="photoModalNext" type="button" aria-label="Następne zdjęcie">&#10095;</button>
+
+      <figure class="photo-modal-figure">
+        <img id="photoModalImage" class="photo-modal-image" src="" alt="">
+      </figure>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const galleryImages = [
+        "zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg",
+        "zdjecia-erasumus/czas_wolny/wyjsciaside/molo.jpeg",
+        "zdjecia-erasumus/czas_wolny/wyjsciaside/bickikoloseum.jpeg",
+        "zdjecia-erasumus/wycieczki/wodospad.jpeg",
+        "zdjecia-erasumus/czas_wolny/hotel/amourprzed.jpeg",
+        "zdjecia-erasumus/czas_wolny/piwnica/pilakrzyki.jpeg",
+        "zdjecia-erasumus/czas_wolny/hotel/lotnisko.jpeg",
+        "zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg",
+        "zdjecia-erasumus/czas_wolny/wyjsciaside/molo.jpeg",
+        "zdjecia-erasumus/czas_wolny/wyjsciaside/bickikoloseum.jpeg",
+        "zdjecia-erasumus/wycieczki/wodospad.jpeg",
+        "zdjecia-erasumus/czas_wolny/hotel/amourprzed.jpeg",
+        "zdjecia-erasumus/czas_wolny/piwnica/pilakrzyki.jpeg",
+        "zdjecia-erasumus/czas_wolny/hotel/lotnisko.jpeg"
+      ];
+
+      const modal = document.getElementById("photoModal");
+      const modalImage = document.getElementById("photoModalImage");
+      const modalClose = document.getElementById("photoModalClose");
+      const modalPrev = document.getElementById("photoModalPrev");
+      const modalNext = document.getElementById("photoModalNext");
+      const openButtons = Array.from(document.querySelectorAll(".gallery-open"));
+
+      let currentIndex = 0;
+
+      function updateModalImage() {
+        modalImage.src = galleryImages[currentIndex];
+        modalImage.alt = "";
+      }
+
+      function openModal(index) {
+        currentIndex = index;
+        updateModalImage();
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        modalImage.src = "";
+        modalImage.alt = "";
+        document.body.style.overflow = "";
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        updateModalImage();
+      }
+
+      function showPrev() {
+        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        updateModalImage();
+      }
+
+      openButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const index = Number(this.getAttribute("data-index") || 0);
+          openModal(index);
+        });
+      });
+
+      modalClose.addEventListener("click", closeModal);
+      modalNext.addEventListener("click", showNext);
+      modalPrev.addEventListener("click", showPrev);
+
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) closeModal();
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (!modal.classList.contains("is-open")) return;
+        if (event.key === "Escape") closeModal();
+        if (event.key === "ArrowRight") showNext();
+        if (event.key === "ArrowLeft") showPrev();
+      });
+    })();
+  </script>
 </body>
 </html>
