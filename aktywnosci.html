@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aktywności | Erasmus Manavgat 2025</title>
+  <title>Aktywności Erasmus Manavgat 2026</title>
 
-  <link
-    href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/subpage.css" />
   <link rel="stylesheet" href="css/aktywnosci.css" />
@@ -21,15 +18,15 @@
         <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%" />
         <div class="nav-logo-text">
           <strong>MANAVGAT</strong>
-          <span>Erasmus 2025</span>
+          <span>Erasmus 2026</span>
         </div>
       </a>
 
       <ul class="nav-links" role="list">
         <li class="has-dropdown">
-          <button class="nav-dropdown-btn" aria-expanded="false">
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
             Praktyki
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
@@ -46,7 +43,9 @@
 
       <div class="nav-actions">
         <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </nav>
@@ -56,7 +55,7 @@
         <li class="mobile-has-dropdown">
           <button class="mobile-dropdown-btn" aria-expanded="false">
             Praktyki
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
@@ -67,7 +66,7 @@
           </ul>
         </li>
         <li><a href="uczestnicy.html">Uczestnicy</a></li>
-        <li><a href="aktywnosci.html">Aktywności</a></li>
+        <li><a href="aktywnosci.html" class="active">Aktywności</a></li>
         <li><a href="organizatorzy.html">Organizatorzy</a></li>
       </ul>
     </div>
@@ -87,7 +86,12 @@
         </div>
 
         <div class="page-hero-img">
-          <button class="hero-image-btn gallery-open" type="button" data-index="0" aria-label="Powiększ zdjęcie główne">
+          <button
+            class="hero-image-btn gallery-trigger"
+            type="button"
+            data-index="0"
+            aria-label="Powiększ zdjęcie główne"
+          >
             <img
               src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg"
               alt="Zdjęcie z aktywności"
@@ -112,8 +116,17 @@
 
         <div class="activity-grid activity-grid--photos">
           <article class="activity-card activity-card--featured">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="1" aria-label="Powiększ zdjęcie Antalyi">
-              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg" alt="Zwiedzanie Antalyi" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="1"
+              aria-label="Powiększ zdjęcie Antalyi"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg"
+                alt="Zwiedzanie Antalyi"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Wycieczka</span>
@@ -127,8 +140,17 @@
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="2" aria-label="Powiększ zdjęcie starego miasta Side">
-              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg" alt="Stare miasto Side" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="2"
+              aria-label="Powiększ zdjęcie starego miasta Side"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg"
+                alt="Stare miasto Side"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Historia</span>
@@ -142,8 +164,17 @@
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="3" aria-label="Powiększ zdjęcie wodospadu">
-              <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="Wodospad Manavgat" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="3"
+              aria-label="Powiększ zdjęcie wodospadu"
+            >
+              <img
+                src="zdjecia-erasumus/wycieczki/wodospad.jpeg"
+                alt="Wodospad Manavgat"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Przyroda</span>
@@ -157,8 +188,17 @@
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="4" aria-label="Powiększ zdjęcie galerii handlowej">
-              <img src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg" alt="Galeria handlowa" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="4"
+              aria-label="Powiększ zdjęcie galerii handlowej"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg"
+                alt="Galeria handlowa"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Miasto</span>
@@ -172,8 +212,17 @@
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="5" aria-label="Powiększ zdjęcie turnieju piłki">
-              <img src="zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg" alt="Turniej piłki nożnej" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="5"
+              aria-label="Powiększ zdjęcie turnieju piłki"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg"
+                alt="Turniej piłki nożnej"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Sport</span>
@@ -187,8 +236,17 @@
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="6" aria-label="Powiększ zdjęcie ping-ponga">
-              <img src="zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg" alt="Turniej ping-ponga" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="6"
+              aria-label="Powiększ zdjęcie ping-ponga"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg"
+                alt="Turniej ping-ponga"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Sport</span>
@@ -201,36 +259,65 @@
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="7" aria-label="Powiększ zdjęcie bazaru">
-              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg" alt="Bazar w Manavgat" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="7"
+              aria-label="Powiększ zdjęcie bazaru"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg"
+                alt="Bazar w Manavgat"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Kultura</span>
               <h3>Bazar w Manavgat</h3>
               <p>
                 Wizyta na lokalnym bazarze była jednym z ciekawszych doświadczeń kulturowych. Można było zobaczyć sposób
-                handlu, lokalne produkty, przyprawy i pamiątki, a także poczuć atmosferę codziennego życia mieszkańców regionu.
+                handlu, lokalne produkty, przyprawy i pamiątki, a także poczuć atmosferę codziennego życia mieszkańców
+                regionu.
               </p>
             </div>
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="8" aria-label="Powiększ zdjęcie plaży">
-              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg" alt="Plaża i nadmorski odpoczynek" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="8"
+              aria-label="Powiększ zdjęcie plaży"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg"
+                alt="Plaża i nadmorski odpoczynek"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Relaks</span>
               <h3>Plaże i nadmorski odpoczynek</h3>
               <p>
                 Pobyt w regionie Antalya dawał również możliwość spędzania czasu nad morzem. Chwile odpoczynku przy plaży
-                pozwalały zregenerować siły po praktykach, nacieszyć się krajobrazem i po prostu pobyć razem w mniej formalnej atmosferze.
+                pozwalały zregenerować siły po praktykach, nacieszyć się krajobrazem i po prostu pobyć razem w mniej
+                formalnej atmosferze.
               </p>
             </div>
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="9" aria-label="Powiększ zdjęcie spaceru">
-              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg" alt="Wieczorne spacery" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="9"
+              aria-label="Powiększ zdjęcie spaceru"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg"
+                alt="Wieczorne spacery"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Integracja</span>
@@ -244,8 +331,17 @@
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="10" aria-label="Powiększ zdjęcie wspólnego wyjścia">
-              <img src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg" alt="Wspólne wyjścia grupowe" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="10"
+              aria-label="Powiększ zdjęcie wspólnego wyjścia"
+            >
+              <img
+                src="zdjecia-erasumus/wycieczki/wodospad.jpeg"
+                alt="Wspólne wyjścia grupowe"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Grupa</span>
@@ -258,15 +354,25 @@
           </article>
 
           <article class="activity-card">
-            <button class="activity-photo-btn gallery-open" type="button" data-index="11" aria-label="Powiększ zdjęcie odpoczynku">
-              <img src="zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg" alt="Odpoczynek po praktykach" class="activity-photo" />
+            <button
+              class="activity-photo-btn gallery-trigger"
+              type="button"
+              data-index="11"
+              aria-label="Powiększ zdjęcie odpoczynku"
+            >
+              <img
+                src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg"
+                alt="Odpoczynek po praktykach"
+                class="activity-photo"
+              />
             </button>
             <div class="activity-body">
               <span class="activity-tag">Relaks</span>
               <h3>Czas na odpoczynek po praktykach</h3>
               <p>
-                Po każdym dniu pełnym nowych obowiązków ważne było również znalezienie chwili na odpoczynek. Taki spokojniejszy
-                czas pomagał zebrać siły na kolejne dni, a jednocześnie dawał przestrzeń do rozmów i podsumowania zdobytych doświadczeń.
+                Po każdym dniu pełnym nowych obowiązków ważne było również znalezienie chwili na odpoczynek. Taki
+                spokojniejszy czas pomagał zebrać siły na kolejne dni, a jednocześnie dawał przestrzeń do rozmów i
+                podsumowania zdobytych doświadczeń.
               </p>
             </div>
           </article>
@@ -274,115 +380,148 @@
       </div>
     </section>
 
-    <section class="section-padding bg-navy">
+    <section class="section-padding bg-navy" id="gallery">
       <div class="container">
         <div class="section-header center">
           <span class="section-tag tag-light">Fotorelacja</span>
           <h2 class="text-light">Galeria zdjęć</h2>
           <p class="section-lead text-light-muted">
-            Kliknij zdjęcie, aby otworzyć pełny widok. Galeria została ułożona w estetyczne,
-            nowoczesne kafelki i przygotowana na 20 zdjęć.
+            Kliknij zdjęcie, aby otworzyć pełny widok. Galeria została przygotowana na 20 zdjęć.
           </p>
         </div>
 
-        <div class="gallery-showcase">
-          <button class="gallery-open gallery-tile gallery-tile--xl" type="button" data-index="0" aria-label="Otwórz zdjęcie 1">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg" alt="Uczestnicy podczas aktywności w Side" loading="lazy" />
-            <span class="gallery-tile-overlay">
-              <span class="gallery-chip">Główne ujęcie</span>
-            </span>
-          </button>
+        <div class="gallery-grid">
+          <div class="gal-card gal-card--hero">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="0" aria-label="Otwórz zdjęcie 1">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg" alt="Uczestnicy podczas aktywności w Side" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile gallery-tile--wide" type="button" data-index="1" aria-label="Otwórz zdjęcie 2">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg" alt="Nadmorskie molo podczas wyjścia grupowego" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="1" aria-label="Otwórz zdjęcie 2">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg" alt="Nadmorskie molo podczas wyjścia grupowego" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile gallery-tile--tall" type="button" data-index="2" aria-label="Otwórz zdjęcie 3">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg" alt="Zwiedzanie historycznego Side" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="2" aria-label="Otwórz zdjęcie 3">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg" alt="Zwiedzanie historycznego Side" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="3" aria-label="Otwórz zdjęcie 4">
-            <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="Wycieczka do wodospadu Manavgat" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="3" aria-label="Otwórz zdjęcie 4">
+              <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="Wycieczka do wodospadu Manavgat" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="4" aria-label="Otwórz zdjęcie 5">
-            <img src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg" alt="Wspólne wyjście uczestników" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="4" aria-label="Otwórz zdjęcie 5">
+              <img src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg" alt="Wspólne wyjście uczestników" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="5" aria-label="Otwórz zdjęcie 6">
-            <img src="zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg" alt="Aktywność sportowa uczestników" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="5" aria-label="Otwórz zdjęcie 6">
+              <img src="zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg" alt="Aktywność sportowa uczestników" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile gallery-tile--wide" type="button" data-index="6" aria-label="Otwórz zdjęcie 7">
-            <img src="zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg" alt="Chwila odpoczynku po praktykach" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="6" aria-label="Otwórz zdjęcie 7">
+              <img src="zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg" alt="Chwila odpoczynku po praktykach" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="7" aria-label="Otwórz zdjęcie 8">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg" alt="Grupa podczas spaceru po okolicy" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="7" aria-label="Otwórz zdjęcie 8">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg" alt="Grupa podczas spaceru po okolicy" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="8" aria-label="Otwórz zdjęcie 9">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg" alt="Widok nadmorski podczas wyjścia" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="8" aria-label="Otwórz zdjęcie 9">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg" alt="Widok nadmorski podczas wyjścia" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile gallery-tile--tall" type="button" data-index="9" aria-label="Otwórz zdjęcie 10">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg" alt="Kadry ze zwiedzania zabytków" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="9" aria-label="Otwórz zdjęcie 10">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg" alt="Kadry ze zwiedzania zabytków" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="10" aria-label="Otwórz zdjęcie 11">
-            <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="Wspólne zdjęcie przy wodospadzie" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="10" aria-label="Otwórz zdjęcie 11">
+              <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="Wspólne zdjęcie przy wodospadzie" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="11" aria-label="Otwórz zdjęcie 12">
-            <img src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg" alt="Uczestnicy podczas wyjścia do miasta" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="11" aria-label="Otwórz zdjęcie 12">
+              <img src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg" alt="Uczestnicy podczas wyjścia do miasta" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="12" aria-label="Otwórz zdjęcie 13">
-            <img src="zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg" alt="Sportowa integracja grupy" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="12" aria-label="Otwórz zdjęcie 13">
+              <img src="zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg" alt="Sportowa integracja grupy" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="13" aria-label="Otwórz zdjęcie 14">
-            <img src="zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg" alt="Czas wolny uczestników" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="13" aria-label="Otwórz zdjęcie 14">
+              <img src="zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg" alt="Czas wolny uczestników" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="14" aria-label="Otwórz zdjęcie 15">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg" alt="Spacer i zwiedzanie okolicy" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="14" aria-label="Otwórz zdjęcie 15">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg" alt="Spacer i zwiedzanie okolicy" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile gallery-tile--wide" type="button" data-index="15" aria-label="Otwórz zdjęcie 16">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg" alt="Nadmorska część programu" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="15" aria-label="Otwórz zdjęcie 16">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg" alt="Nadmorska część programu" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="16" aria-label="Otwórz zdjęcie 17">
-            <img src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg" alt="Historyczna część wycieczki" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="16" aria-label="Otwórz zdjęcie 17">
+              <img src="zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg" alt="Historyczna część wycieczki" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="17" aria-label="Otwórz zdjęcie 18">
-            <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="Relaks w otoczeniu natury" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="17" aria-label="Otwórz zdjęcie 18">
+              <img src="zdjecia-erasumus/wycieczki/wodospad.jpeg" alt="Relaks w otoczeniu natury" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="18" aria-label="Otwórz zdjęcie 19">
-            <img src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg" alt="Wspólna aktywność poza praktykami" loading="lazy" />
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="18" aria-label="Otwórz zdjęcie 19">
+              <img src="zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg" alt="Wspólna aktywność poza praktykami" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
 
-          <button class="gallery-open gallery-tile" type="button" data-index="19" aria-label="Otwórz zdjęcie 20">
-            <img src="zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg" alt="Końcowe ujęcie galerii" loading="lazy" />
-            <span class="gallery-tile-overlay gallery-tile-overlay--count">
-              <span class="gallery-chip">20 zdjęć</span>
-            </span>
-          </button>
+          <div class="gal-card">
+            <button class="gallery-btn gallery-trigger" type="button" data-index="19" aria-label="Otwórz zdjęcie 20">
+              <img src="zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg" alt="Końcowe ujęcie galerii" class="gallery-photo" loading="lazy" />
+            </button>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Projekt Erasmus Manavgat 2025 – Praktyki zawodowe 24.04 – 11.05.2025, nr 2024-1-PL01-KA121-VET-000203996</p>
+    <p>Projekt Erasmus+ Manavgat 2026 — Praktyki zawodowe 12.04–2.05.2026, nr 2025-1-PL01-KA121-VET-000313536</p>
     <p>
       Stronę wykonali
-      <a href="#" target="_blank" rel="noopener">Patryk</a>,
-      <a href="#" target="_blank" rel="noopener">Łukasz Nowak</a>,
-      <a href="#" target="_blank" rel="noopener">Bartosz Klia</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Patryk</a>,
+      <a href="#" target="_blank" rel="noopener noreferrer">Łukasz Nowak</a>,
+      <a href="#" target="_blank" rel="noopener noreferrer">Bartosz Kliś</a>
     </p>
   </footer>
 
@@ -401,27 +540,91 @@
   <script src="js/main.js"></script>
   <script>
     (function () {
-      const galleryImages = [
-        "zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg",
-        "zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg",
-        "zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg",
-        "zdjecia-erasumus/wycieczki/wodospad.jpeg",
-        "zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg",
-        "zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg",
-        "zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg",
-        "zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg",
-        "zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg",
-        "zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg",
-        "zdjecia-erasumus/wycieczki/wodospad.jpeg",
-        "zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg",
-        "zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg",
-        "zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg",
-        "zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg",
-        "zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg",
-        "zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg",
-        "zdjecia-erasumus/wycieczki/wodospad.jpeg",
-        "zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg",
-        "zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg"
+      const galleryItems = [
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg",
+          alt: "Uczestnicy podczas aktywności w Side"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg",
+          alt: "Nadmorskie molo podczas wyjścia grupowego"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg",
+          alt: "Zwiedzanie historycznego Side"
+        },
+        {
+          src: "zdjecia-erasumus/wycieczki/wodospad.jpeg",
+          alt: "Wycieczka do wodospadu Manavgat"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg",
+          alt: "Wspólne wyjście uczestników"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg",
+          alt: "Aktywność sportowa uczestników"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg",
+          alt: "Chwila odpoczynku po praktykach"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg",
+          alt: "Grupa podczas spaceru po okolicy"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg",
+          alt: "Widok nadmorski podczas wyjścia"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg",
+          alt: "Kadry ze zwiedzania zabytków"
+        },
+        {
+          src: "zdjecia-erasumus/wycieczki/wodospad.jpeg",
+          alt: "Wspólne zdjęcie przy wodospadzie"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg",
+          alt: "Uczestnicy podczas wyjścia do miasta"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg",
+          alt: "Sportowa integracja grupy"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/hotel/lotnisko.jpeg",
+          alt: "Czas wolny uczestników"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/sideznak.jpeg",
+          alt: "Spacer i zwiedzanie okolicy"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/molo.jpeg",
+          alt: "Nadmorska część programu"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/wyjscia/side/bickikoloseum.jpeg",
+          alt: "Historyczna część wycieczki"
+        },
+        {
+          src: "zdjecia-erasumus/wycieczki/wodospad.jpeg",
+          alt: "Relaks w otoczeniu natury"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/hotel/amourprzed.jpeg",
+          alt: "Wspólna aktywność poza praktykami"
+        },
+        {
+          src: "zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg",
+          alt: "Końcowe ujęcie galerii"
+        }
+        {
+          src: "zdjecia-erasumus/czaswolny/piwnica/pilakrzyki.jpeg",
+          alt: "Końcowe ujęcie galerii2"
+        }
       ];
 
       const modal = document.getElementById("photoModal");
@@ -429,17 +632,24 @@
       const modalClose = document.getElementById("photoModalClose");
       const modalPrev = document.getElementById("photoModalPrev");
       const modalNext = document.getElementById("photoModalNext");
-      const openButtons = Array.from(document.querySelectorAll(".gallery-open"));
+      const triggers = Array.from(document.querySelectorAll(".gallery-trigger"));
 
       let currentIndex = 0;
 
+      if (!modal || !modalImage || !modalClose || !modalPrev || !modalNext || !triggers.length) {
+        return;
+      }
+
       function updateModalImage() {
-        modalImage.src = galleryImages[currentIndex];
-        modalImage.alt = "Zdjęcie galerii " + (currentIndex + 1);
+        const item = galleryItems[currentIndex];
+        if (!item) return;
+
+        modalImage.src = item.src;
+        modalImage.alt = item.alt;
       }
 
       function openModal(index) {
-        currentIndex = index;
+        currentIndex = Number(index) || 0;
         updateModalImage();
         modal.classList.add("is-open");
         modal.setAttribute("aria-hidden", "false");
@@ -455,33 +665,31 @@
       }
 
       function showNext() {
-        currentIndex = (currentIndex + 1) % galleryImages.length;
+        currentIndex = (currentIndex + 1) % galleryItems.length;
         updateModalImage();
       }
 
       function showPrev() {
-        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
         updateModalImage();
       }
 
-      openButtons.forEach(function (button) {
+      triggers.forEach(function (button) {
         button.addEventListener("click", function () {
-          const index = Number(this.getAttribute("data-index") || 0);
+          const index = Number(button.getAttribute("data-index") || 0);
           openModal(index);
         });
       });
 
-      if (modalClose) modalClose.addEventListener("click", closeModal);
-      if (modalNext) modalNext.addEventListener("click", showNext);
-      if (modalPrev) modalPrev.addEventListener("click", showPrev);
+      modalClose.addEventListener("click", closeModal);
+      modalNext.addEventListener("click", showNext);
+      modalPrev.addEventListener("click", showPrev);
 
-      if (modal) {
-        modal.addEventListener("click", function (event) {
-          if (event.target === modal) {
-            closeModal();
-          }
-        });
-      }
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
 
       document.addEventListener("keydown", function (event) {
         if (!modal.classList.contains("is-open")) return;
