@@ -422,9 +422,6 @@
   });
 })();
 
-
-
-
   (function () {
     const modal = document.getElementById('photoModal');
     const modalImage = document.getElementById('photoModalImage');
@@ -471,7 +468,7 @@
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && modal.classList.contains('is-open')) {
-        closeModal();
+        closeModal(); 
       }
     });
   })();

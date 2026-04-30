@@ -1,115 +1,255 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="light">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Organizatorzy | Erasmus+ Manavgat 2026</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/subpage.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organizatorzy | Erasmus+</title>
+
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@400,500,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/subpage.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Przejdź do treści</a>
 
   <header class="site-header" id="top">
-    <nav class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus+">
-  <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
-  <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
-  <div class="nav-logo-text">
-    <strong>MANAVGAT</strong>
-    <span>Erasmus+ 2026</span>
-  </div>
-</a>
+    <nav class="nav-inner" aria-label="Główna nawigacja">
+      <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus">
+        <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%">
+        <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%">
+        <div class="nav-logo-text">
+          <strong>MANAVGAT</strong>
+          <span>Erasmus 2026</span>
+        </div>
+      </a>
+
       <ul class="nav-links" role="list">
-        <li class="has-dropdown"><button class="nav-dropdown-btn" aria-expanded="false">Praktyki <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button><ul class="dropdown-menu"><li><a href="informatyka.html">Informatyka</a></li><li><a href="elektronika.html">Elektronika</a></li><li><a href="automatyka.html">Automatyka</a></li></ul></li>
+        <li class="has-dropdown">
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true" type="button">
+            Praktyki
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="dropdown-menu" role="list">
+            <li><a href="informatyka.html">Informatyka</a></li>
+            <li><a href="elektronika.html">Elektronika</a></li>
+            <li><a href="automatyka.html">Automatyka</a></li>
+          </ul>
+        </li>
+
         <li><a href="uczestnicy.html">Uczestnicy</a></li>
         <li><a href="aktywnosci.html">Aktywności</a></li>
         <li><a href="organizatorzy.html" class="active">Organizatorzy</a></li>
       </ul>
+
       <div class="nav-actions">
-  <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-    <span></span><span></span><span></span>
-  </button>
-</div>
+        <button
+          class="nav-hamburger"
+          id="hamburger"
+          aria-label="Otwórz menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
+
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <ul role="list">
-        <li class="mobile-has-dropdown"><button class="mobile-dropdown-btn" aria-expanded="false">Praktyki <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button><ul class="mobile-submenu"><li><a href="informatyka.html">Informatyka</a></li><li><a href="elektronika.html">Elektronika</a></li><li><a href="automatyka.html">Automatyka</a></li></ul></li>
-        <li><a href="uczestnicy.html">Uczestnicy</a></li><li><a href="aktywnosci.html">Aktywności</a></li><li><a href="organizatorzy.html">Organizatorzy</a></li>
+        <li class="mobile-has-dropdown">
+          <button class="mobile-dropdown-btn" aria-expanded="false" type="button">
+            Praktyki
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="mobile-submenu" aria-hidden="true">
+            <li><a href="informatyka.html">Informatyka</a></li>
+            <li><a href="elektronika.html">Elektronika</a></li>
+            <li><a href="automatyka.html">Automatyka</a></li>
+          </ul>
+        </li>
+
+        <li><a href="uczestnicy.html">Uczestnicy</a></li>
+        <li><a href="aktywnosci.html">Aktywności</a></li>
+        <li><a href="organizatorzy.html">Organizatorzy</a></li>
       </ul>
     </div>
   </header>
 
-  <main id="main">
+  <main id="main-content">
+
     <section class="page-hero page-hero--navy">
-      <div class="container page-hero-inner">
+      <div class="container page-hero-inner org-hero-layout">
         <div class="page-hero-text">
-          <span class="section-tag tag-light">Zespół projektu</span>
-          <h1>Organizatorzy</h1>
-          <p>Wyjazd był możliwy dzięki zaangażowaniu nauczycieli i koordynatorów ZSE Rzeszów, którzy zadbali o każdy szczegół organizacyjny i merytoryczny projektu.</p>
+          <span class="section-tag tag-light">Erasmus+ / Organizatorzy</span>
+          <h1>Organizatorzy projektu</h1>
+          <p class="org-lead">
+            Poniżej przedstawiamy głównych organizatorów i szkoły partnerskie projektu Erasmus+
+            realizowanego przez Zespół Szkół Elektronicznych w Rzeszowie we współpracy ze stroną turecką.
+          </p>
         </div>
-        <div class="page-hero-img">
-          <div class="img-placeholder-dark" role="img" aria-label="Zdjęcie organizatorów">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            <p>Zdjęcie organizatorów</p>
+
+        <aside class="org-hero-side" aria-label="Logo projektu">
+          <div class="org-eu-logo-only">
+            <img src="images/logo-eu.png" alt="Logo Unii Europejskiej">
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
     <section class="section-padding bg-light">
       <div class="container">
-        <div class="section-header center">
-          <span class="section-tag tag-blue">Koordynatorzy projektu</span>
-          <h2>Zespół organizacyjny</h2>
-          <p class="section-lead">Nauczyciele i opiekunowie, którzy przygotowali i przeprowadzili projekt od A do Z.</p>
+        <div class="center org-section-head">
+          <span class="section-tag tag-blue">Koordynatorzy</span>
+          <h2>Osoby odpowiedzialne za realizację projektu</h2>
+          <p>
+            Dwie strony projektu, jeden wspólny cel: organizacja mobilności, opieka nad uczniami
+            i sprawna współpraca między szkołami.
+          </p>
         </div>
-        <div class="organizer-grid">
-          <div class="organizer-card">
-            <div class="organizer-avatar" role="img" aria-label="Zdjęcie koordynatora">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            </div>
+
+        <div class="organizer-grid org-coordinator-grid">
+          <article class="organizer-card org-coordinator-card">
+            <div class="organizer-avatar org-avatar-red">PL</div>
             <div class="organizer-info">
-              <strong>Imię Nazwisko</strong>
-              <span class="organizer-role">Koordynator projektu</span>
-              <p>Opis roli i zaangażowania w projekt Erasmus+.</p>
+              <span class="organizer-role">Strona polska</span>
+              <strong>Zbigniew Niedbała</strong>
+              <p>
+                Koordynator projektu po stronie polskiej, odpowiedzialny za przygotowanie
+                i organizację działań realizowanych przez ZSE w Rzeszowie.
+              </p>
             </div>
-          </div>
-          <div class="organizer-card">
-            <div class="organizer-avatar"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-            <div class="organizer-info"><strong>Imię Nazwisko</strong><span class="organizer-role">Opiekun grupy</span><p>Opis roli i zaangażowania w projekt Erasmus+.</p></div>
-          </div>
-          <div class="organizer-card">
-            <div class="organizer-avatar"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-            <div class="organizer-info"><strong>Imię Nazwisko</strong><span class="organizer-role">Nauczyciel prowadzący</span><p>Opis roli i zaangażowania w projekt Erasmus+.</p></div>
-          </div>
+          </article>
+
+          <article class="organizer-card org-coordinator-card">
+            <div class="organizer-avatar org-avatar-blue">TR</div>
+            <div class="organizer-info">
+              <span class="organizer-role">Strona turecka</span>
+              <strong>Taha Ceyhan</strong>
+              <p>
+                Koordynator projektu po stronie tureckiej, wspierający organizację współpracy
+                partnerskiej oraz pobytu uczniów w Manavgat.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section-padding bg-blue-dark">
+    <section class="section-padding bg-offset">
       <div class="container">
-        <div class="section-header center">
-          <span class="section-tag tag-light">Partnerzy</span>
-          <h2 class="text-light">Szkoła partnerska</h2>
+        <div class="center org-section-head">
+          <span class="section-tag tag-red">Szkoły partnerskie</span>
+          <h2>Szkoły współpracujące w ramach projektu</h2>
+          <p>
+            Partnerzy projektu odpowiadają za przygotowanie organizacyjne, merytoryczne
+            i bezpieczną realizację mobilności uczniów.
+          </p>
         </div>
-        <div class="partner-block">
-          <div class="partner-logo-ph" role="img" aria-label="Logo szkoły partnerskiej">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <div class="partner-text">
-            <h3 class="text-light">Manavgat Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi</h3>
-            <p class="text-light-muted">Szkoła partnerska z Turcji, która zapewniła opiekę merytoryczną i organizacyjną podczas praktyk oraz umożliwiła uczniom dostęp do 9 firm przyjmujących w regionie Manavgat / Antalya.</p>
-          </div>
+
+        <div class="organizer-grid org-school-grid">
+          <article class="organizer-card org-school-card">
+            <div class="org-school-badge">
+              <img src="images/logo-zse.png" alt="Logo Zespołu Szkół Elektronicznych w Rzeszowie">
+            </div>
+
+            <div class="organizer-info org-school-info">
+              <h3>Zespół Szkół Elektronicznych w Rzeszowie</h3>
+              <p>
+                Lider projektu i instytucja wysyłająca. Szkoła techniczna z profilami:
+                informatyk, elektronik, automatyk.
+              </p>
+
+              <div class="org-meta">
+                <span class="chip">Polska</span>
+                <span class="chip chip-red">Dyrektor: Jacek Szydełko</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="organizer-card org-school-card">
+            <div class="org-school-badge org-school-badge--alt">
+              <img src="https://manavgatborsaistanbulmtal.meb.k12.tr/tema/meblogo.png" alt="Logo Manavgat Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi">
+            </div>
+
+            <div class="organizer-info org-school-info">
+              <h3>Manavgat Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi</h3>
+              <p>
+                Instytucja przyjmująca w projekcie po stronie tureckiej. Turecki zespół szkół
+                z zapleczem technicznym w Manavgacie.
+              </p>
+
+              <div class="org-meta">
+                <span class="chip">Turcja</span>
+                <span class="chip chip-red">Dyrektor: Veli Alaeddin Uslu</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-  <p>Projekt Erasmus+ Manavgat 2026 · Praktyki zawodowe 12.04–2.05.2026, nr 2025-1-PL01-KA121-VET-000313536</p>
-  <p>Stronę wykonali: <a href="#" target="_blank" rel="noopener">Patryk Śliż</a> · <a href="#" target="_blank" rel="noopener">Łukasz Nowak</a> · <a href="#" target="_blank" rel="noopener">Bartosz Kliś</a></p>
-</footer>
-  <script src="js/main.js"></script>
+    <p>Projekt Erasmus Manavgat 2026 – Praktyki zawodowe 12.04–2.05.2026, nr 2025-1-PL01-KA121-VET-000313536</p>
+    <p>
+      Stronę wykonali
+      <a href="#" target="_blank" rel="noopener noreferrer">Patryk Śliż</a>,
+      <a href="#" target="_blank" rel="noopener noreferrer">Łukasz Nowak</a>,
+      <a href="#" target="_blank" rel="noopener noreferrer">Bartosz Klia</a>
+    </p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.classList.toggle('is-open');
+        mobileMenu.setAttribute('aria-hidden', String(expanded));
+      });
+    }
+
+    const dropdownBtn = document.querySelector('.nav-dropdown-btn');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    if (dropdownBtn && dropdownMenu) {
+      dropdownBtn.addEventListener('click', () => {
+        const expanded = dropdownBtn.getAttribute('aria-expanded') === 'true';
+        dropdownBtn.setAttribute('aria-expanded', String(!expanded));
+        dropdownMenu.classList.toggle('is-open');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.has-dropdown')) {
+          dropdownBtn.setAttribute('aria-expanded', 'false');
+          dropdownMenu.classList.remove('is-open');
+        }
+      });
+    }
+
+    const mobileDropdownBtn = document.querySelector('.mobile-dropdown-btn');
+    const mobileSubmenu = document.querySelector('.mobile-submenu');
+
+    if (mobileDropdownBtn && mobileSubmenu) {
+      mobileDropdownBtn.addEventListener('click', () => {
+        const expanded = mobileDropdownBtn.getAttribute('aria-expanded') === 'true';
+        mobileDropdownBtn.setAttribute('aria-expanded', String(!expanded));
+        mobileSubmenu.classList.toggle('is-open');
+        mobileSubmenu.setAttribute('aria-hidden', String(expanded));
+      });
+    }
+  </script>
 </body>
 </html>
