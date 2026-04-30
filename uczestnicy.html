@@ -1,341 +1,252 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="light">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Uczestnicy | Erasmus+ Manavgat 2026</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/subpage.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uczestnicy Erasmus Manavgat 2026</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/subpage.css">
+  <link rel="stylesheet" href="css/a11y.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <script src="js/a11y.js"></script>
+<a class="skip-link" href="#main">Przejdź do treści</a>
 
-  <header class="site-header" role="banner">
-    <nav class="nav-inner" aria-label="Nawigacja główna">
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <nav class="nav-inner" aria-label="Nawigacja główna">
+    <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus">
+      <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%">
+      <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%">
+      <div class="nav-logo-text"><strong>MANAVGAT</strong><span>Erasmus 2026</span></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li class="has-dropdown">
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+          Praktyki
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <ul class="dropdown-menu" role="list">
+          <li><a href="informatyka.html">Informatyka</a></li>
+          <li><a href="elektronika.html">Elektronika</a></li>
+          <li><a href="automatyka.html">Automatyka</a></li>
+        </ul>
+      </li>
+      <li><a href="uczestnicy.html" class="active">Uczestnicy</a></li>
+      <li><a href="aktywnosci.html">Aktywności</a></li>
+      <li><a href="organizatorzy.html">Organizatorzy</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobilne">
+    <ul role="list">
+      <li>
+        <button class="mobile-dropdown-btn" aria-expanded="false">
+          Praktyki
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <ul class="mobile-submenu" role="list">
+          <li><a href="informatyka.html">Informatyka</a></li>
+          <li><a href="elektronika.html">Elektronika</a></li>
+          <li><a href="automatyka.html">Automatyka</a></li>
+        </ul>
+      </li>
+      <li><a href="uczestnicy.html">Uczestnicy</a></li>
+      <li><a href="aktywnosci.html">Aktywności</a></li>
+      <li><a href="organizatorzy.html">Organizatorzy</a></li>
+    </ul>
+  </nav>
+</header>
 
-      <a href="index.html" class="nav-logo" aria-label="Strona główna Erasmus+">
-        <img src="images/logo-zse.png" alt="Logo ZSE Rzeszów" width="40" height="40" style="border-radius:50%;" />
-        <img src="images/logo-eu.png" alt="Logo Unii Europejskiej" width="40" height="40" style="border-radius:50%;" />
-        <div class="nav-logo-text">
-          <strong>MANAVGAT</strong>
-          <span>Erasmus+ 2026</span>
+<main id="main">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero page-hero--navy" aria-label="Nagłówek strony">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="page-hero-text">
+          <span class="section-tag tag-light">Erasmus+ 2025</span>
+          <h1>Uczestnicy</h1>
+          <p>18 uczniów Zespołu Szkół Elektronicznych w Rzeszowie, którzy odbyli zagraniczne praktyki zawodowe w Turcji w ramach programu Erasmus+.</p>
         </div>
-      </a>
-
-      <ul class="nav-links" role="list">
-        <li class="has-dropdown">
-          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
-            Praktyki
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <ul class="dropdown-menu" role="list">
-            <li><a href="informatyka.html">Informatyka</a></li>
-            <li><a href="elektronika.html">Elektronika</a></li>
-            <li><a href="automatyka.html">Automatyka</a></li>
-          </ul>
-        </li>
-        <li><a href="uczestnicy.html" class="active">Uczestnicy</a></li>
-        <li><a href="aktywnosci.html">Aktywności</a></li>
-        <li><a href="organizatorzy.html">Organizatorzy</a></li>
-      </ul>
-
-      <div class="nav-actions">
-  <button class="nav-hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
-    <span></span><span></span><span></span>
-  </button>
-</div>
-    </nav>
-
-    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobilne">
-      <ul role="list">
-        <li>
-          <button class="mobile-dropdown-btn" aria-expanded="false">
-            Praktyki
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <ul class="mobile-submenu" role="list">
-            <li><a href="informatyka.html">Informatyka</a></li>
-            <li><a href="elektronika.html">Elektronika</a></li>
-            <li><a href="automatyka.html">Automatyka</a></li>
-          </ul>
-        </li>
-        <li><a href="uczestnicy.html">Uczestnicy</a></li>
-        <li><a href="aktywnosci.html">Aktywności</a></li>
-        <li><a href="organizatorzy.html">Organizatorzy</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main">
-
-    <!-- PAGE HERO -->
-    <section class="page-hero page-hero--navy" aria-label="Nagłówek strony">
-      <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-text">
-            <span class="section-tag tag-light">Erasmus+ 2025</span>
-            <h1>Uczestnicy</h1>
-            <p>18 uczniów Zespołu Szkół Elektronicznych w Rzeszowie, którzy odbyli zagraniczne praktyki zawodowe w Turcji w ramach programu Erasmus+.</p>
-          </div>
-          <div class="page-hero-img">
-            <div class="img-placeholder-dark" role="img" aria-label="Zdjęcie grupowe uczestników">
-<div class="group-photo-wrap" style="border-radius: var(--r-2xl); overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.20), 0 20px 52px rgba(0,0,0,0.38); border: 3px solid rgba(253,240,213,0.18); width: 115%; margin-left: -7.5%;">              <img
-                src="zdjecia-erasumus/osoby/grupowe.jpeg"
-                alt="Zdjęcie grupowe uczestników Erasmus+ Manavgat 2025"
-                class="group-photo"
-                loading="eager"
-                onerror="this.style.display='none'"
-              />
-
-            </div>
+        <div class="page-hero-img">
+          <div class="group-photo-wrap" style="border-radius: var(--r-2xl); overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.20), 0 20px 52px rgba(0,0,0,0.38); border: 3px solid rgba(253,240,213,0.18); width: 115%; margin-left: -7.5%;">
+            <img
+              src="zdjecia-erasumus/osoby/grupowe.jpeg"
+              alt="Zdjęcie grupowe uczestników Erasmus+ Manavgat 2025"
+              class="group-photo"
+              loading="eager"
+              onerror="this.style.display='none'"
+            />
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- STATYSTYKI -->
-    <div class="stats-bar" role="region" aria-label="Statystyki projektu">
-      <div class="stats-inner container">
-        <div class="stat-item"><span class="stat-num" data-count="18">18</span><span class="stat-lbl">uczestników</span></div>
-        <div class="stat-sep" aria-hidden="true"></div>
-        <div class="stat-item"><span class="stat-num" data-count="3">3</span><span class="stat-lbl">kierunki</span></div>
-        <div class="stat-sep" aria-hidden="true"></div>
-        <div class="stat-item"><span class="stat-num" data-count="9">9</span><span class="stat-lbl">firm przyjmujących</span></div>
-        <div class="stat-sep" aria-hidden="true"></div>
-        <div class="stat-item"><span class="stat-num" data-count="18">18</span><span class="stat-lbl">dni praktyk</span></div>
       </div>
     </div>
+  </section>
 
-    <!-- OPIEKUNOWIE -->
-    <section class="section-padding bg-navy" aria-labelledby="nauczyciele-heading">
-      <div class="container">
-        <div class="section-header center reveal">
-          <span class="section-tag tag-light">Kadra</span>
-          <h2 id="nauczyciele-heading" style="color:#FDF0D5">Opiekunowie wyjazdu</h2>
-          <p class="section-lead text-light-muted">Nauczyciele ZSE Rzeszów towarzyszący uczniom podczas praktyk w Manavgat.</p>
-        </div>
-        <div class="pcard-grid">
+  <!-- STATYSTYKI -->
+  <div class="stats-bar" role="region" aria-label="Statystyki projektu">
+    <div class="stats-inner container">
+      <div class="stat-item"><span class="stat-num" data-count="18">18</span><span class="stat-lbl">uczestników</span></div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item"><span class="stat-num" data-count="3">3</span><span class="stat-lbl">kierunki</span></div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item"><span class="stat-num" data-count="9">9</span><span class="stat-lbl">firm przyjmujących</span></div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item"><span class="stat-num" data-count="18">18</span><span class="stat-lbl">dni praktyk</span></div>
+    </div>
+  </div>
 
-          <article class="pcard pcard--dark reveal">
-            <div class="pcard-img">
-              <img src="zdjecia-erasumus/osoby/niedbala.jpeg" alt="Zbigniew Niedbała" loading="lazy"
-                   onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/>
-              <div class="pcard-fallback" aria-hidden="true">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-              </div>
-            </div>
-            <div class="pcard-info"><strong>Zbigniew Niedbała</strong><span>Koordynator, opiekun</span></div>
-          </article>
-
-          <article class="pcard pcard--dark reveal">
-            <div class="pcard-img">
-              <img src="zdjecia-erasumus/osoby/brys.jpeg" alt="Barbara Brys-Marszałek" loading="lazy"
-                   onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/>
-              <div class="pcard-fallback" aria-hidden="true">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-              </div>
-            </div>
-            <div class="pcard-info"><strong>Barbara Bryś-Marszałek</strong><span>Opiekun</span></div>
-          </article>
-
-          <article class="pcard pcard--dark reveal">
-            <div class="pcard-img">
-              <img src="zdjecia-erasumus/osoby/matlosz.jpeg" alt="Daria Matłosz" loading="lazy"
-                   onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/>
-              <div class="pcard-fallback" aria-hidden="true">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-              </div>
-            </div>
-            <div class="pcard-info"><strong>Daria Matłosz</strong><span>Opiekun</span></div>
-          </article>
-
-          <article class="pcard pcard--dark reveal">
-            <div class="pcard-img">
-              <img src="zdjecia-erasumus/osoby/bialek.jpeg" alt="Justyna Białęk" loading="lazy"
-                   onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/>
-              <div class="pcard-fallback" aria-hidden="true">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-              </div>
-            </div>
-            <div class="pcard-info"><strong>Justyna Białęk</strong><span>Opiekun</span></div>
-          </article>
-
-        </div>
+  <!-- OPIEKUNOWIE -->
+  <section class="section-padding bg-navy" aria-labelledby="nauczyciele-heading">
+    <div class="container">
+      <div class="section-header center reveal">
+        <span class="section-tag tag-light">Kadra</span>
+        <h2 id="nauczyciele-heading" style="color:#FDF0D5">Opiekunowie wyjazdu</h2>
+        <p class="section-lead text-light-muted">Nauczyciele ZSE Rzeszów towarzyszący uczniom podczas praktyk w Manavgat.</p>
       </div>
-    </section>
-
-    <!-- UCZNIOWIE INFORMATYKA -->
-    <section class="section-padding bg-light" aria-labelledby="it-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-tag tag-blue">Kierunek</span>
-          <h2 id="it-heading">Uczniowie Informatyki</h2>
-          <p>Technik informatyk · 11 uczestników</p>
-        </div>
-        <div class="pcard-grid">
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\tobiasz.jpeg" alt="Dominik Tobiasz" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Dominik Tobiasz</strong><span>Informatyk kl. 4i</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\nosek.jpeg" alt="Michał Nosek" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Michał Nosek</strong><span>Informatyk kl. 4i</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\sliz.jpeg" alt="Patryk Śliż" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Patryk Śliż</strong><span>Informatyk kl. 4j</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\nowak.jpeg" alt="Łukasz Nowak" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Łukasz Nowak</strong><span>Informatyk kl. 3g</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\turon.jpeg" alt="Emilia Turoń" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Emilia Turoń</strong><span>Informatyk kl. 4h</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\starobrat.jpeg" alt="Szymon Starobrat" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Szymon Starobrat</strong><span>Informatyk kl. 3k</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\dobrzanski.jpeg" alt="Maciej Dobrzański" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Maciej Dobrzański</strong><span>Informatyk kl. 3h</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\orzechowski.jpeg" alt="Bartosz Orzechowski" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Bartosz Orzechowski</strong><span>Informatyk kl. 3j</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\dawida.jpeg" alt="Hubert Dawida" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Hubert Dawida</strong><span>Informatyk kl. 3j</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\machowska.jpeg" alt="Nicola Machowska" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Nicola Machowska</strong><span>Informatyk kl. 4g</span></div>
-          </article>
-          <article class="pcard pcard--navy reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\hamerla.jpeg" alt="Szymon Hamerla" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Szymon Hamerla</strong><span>Informatyk kl. 4j</span></div>
-          </article>
-        </div>
+      <div class="pcard-grid">
+        <article class="pcard pcard--dark reveal">
+          <div class="pcard-img">
+            <img src="zdjecia-erasumus/osoby/niedbala.jpeg" alt="Zbigniew Niedbała" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'">
+            <div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+          </div>
+          <div class="pcard-info"><strong>Zbigniew Niedbała</strong><span>Koordynator, opiekun</span></div>
+        </article>
+        <article class="pcard pcard--dark reveal">
+          <div class="pcard-img">
+            <img src="zdjecia-erasumus/osoby/brys.jpeg" alt="Barbara Bryś-Marszałek" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'">
+            <div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+          </div>
+          <div class="pcard-info"><strong>Barbara Bryś-Marszałek</strong><span>Opiekun</span></div>
+        </article>
+        <article class="pcard pcard--dark reveal">
+          <div class="pcard-img">
+            <img src="zdjecia-erasumus/osoby/matlosz.jpeg" alt="Daria Matłosz" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'">
+            <div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+          </div>
+          <div class="pcard-info"><strong>Daria Matłosz</strong><span>Opiekun</span></div>
+        </article>
+        <article class="pcard pcard--dark reveal">
+          <div class="pcard-img">
+            <img src="zdjecia-erasumus/osoby/bialek.jpeg" alt="Justyna Białęk" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'">
+            <div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+          </div>
+          <div class="pcard-info"><strong>Justyna Białęk</strong><span>Opiekun</span></div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- UCZNIOWIE ELEKTRONIKA -->
-    <section class="section-padding bg-offset" aria-labelledby="el-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-tag tag-red">Kierunek</span>
-          <h2 id="el-heading">Uczniowie Elektroniki</h2>
-          <p>Technik elektronik · 1 uczestnik</p>
-        </div>
-        <div class="pcard-grid">
-          <article class="pcard pcard--red reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\nedza.jpeg" alt="Bartosz Nędza" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Bartosz Nędza</strong><span>Elektronik kl. 3c</span></div>
-          </article>
-        </div>
+  <!-- UCZNIOWIE INFORMATYKA -->
+  <section class="section-padding bg-light" aria-labelledby="it-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag tag-blue">Kierunek</span>
+        <h2 id="it-heading">Uczniowie Informatyki</h2>
+        <p>Technik informatyk · 11 uczestników</p>
       </div>
-    </section>
-
-    <!-- UCZNIOWIE AUTOMATYKA -->
-    <section class="section-padding bg-light" aria-labelledby="aut-heading">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-tag tag-blue">Kierunek</span>
-          <h2 id="aut-heading">Uczniowie Automatyki</h2>
-          <p>Technik automatyk · 6 uczestników</p>
-        </div>
-        <div class="pcard-grid">
-          <article class="pcard reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\wozny.jpeg" alt="Dawid Woźny" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Dawid Woźny</strong><span>Automatyk kl. 4a</span></div>
-          </article>
-          <article class="pcard reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\winiewski.jpeg" alt="Filip Wiśniewski" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Filip Winiewski</strong><span>Automatyk kl. 4a</span></div>
-          </article>
-          <article class="pcard reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\siekaniec.jpeg" alt="Zuzanna Siekaniec" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Zuzanna Siekaniec</strong><span>Automatyk kl. 4a</span></div>
-          </article>
-          <article class="pcard reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\klis.jpeg" alt="Bartosz Kliś" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Bartosz Kliś</strong><span>Automatyk kl. 4a</span></div>
-          </article>
-          <article class="pcard reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\bogusz.jpeg" alt="Maciej Bogusz" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Maciej Bogusz</strong><span>Automatyk kl. 4b</span></div>
-          </article>
-          <article class="pcard reveal">
-            <div class="pcard-img"><img src="zdjecia-erasumus\osoby\bakowski.jpeg" alt="Michał Bąkowski" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"/><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
-            <div class="pcard-info"><strong>Michał Bąkowski</strong><span>Automatyk kl. 4b</span></div>
-          </article>
-        </div>
+      <div class="pcard-grid">
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Dominik Tobiasz" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Dominik Tobiasz</strong><span>Informatyk kl. 4i</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Michał Nosek" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Michał Nosek</strong><span>Informatyk kl. 4i</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Patryk Śliż" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Patryk Śliż</strong><span>Informatyk kl. 4j</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Łukasz Nowak" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Łukasz Nowak</strong><span>Informatyk kl. 3g</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Emilia Turoń" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Emilia Turoń</strong><span>Informatyk kl. 4h</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Szymon Starobrat" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Szymon Starobrat</strong><span>Informatyk kl. 3k</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Maciej Dobrzański" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Maciej Dobrzański</strong><span>Informatyk kl. 3h</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Bartosz Orzechowski" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Bartosz Orzechowski</strong><span>Informatyk kl. 3j</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Hubert Dawida" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Hubert Dawida</strong><span>Informatyk kl. 3j</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Nicola Machowska" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Nicola Machowska</strong><span>Informatyk kl. 4g</span></div></article>
+        <article class="pcard pcard--navy reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Szymon Hamerla" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Szymon Hamerla</strong><span>Informatyk kl. 4j</span></div></article>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- UCZNIOWIE ELEKTRONIKA -->
+  <section class="section-padding bg-offset" aria-labelledby="el-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag tag-red">Kierunek</span>
+        <h2 id="el-heading">Uczniowie Elektroniki</h2>
+        <p>Technik elektronik · 1 uczestnik</p>
+      </div>
+      <div class="pcard-grid">
+        <article class="pcard pcard--red reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Bartosz Nędza" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Bartosz Nędza</strong><span>Elektronik kl. 3c</span></div></article>
+      </div>
+    </div>
+  </section>
 
-  <!-- FOOTER -->
- <footer class="site-footer">
-  <p>Projekt Erasmus+ Manavgat 2026 · 12.04–2.05.2026, nr 2025-1-PL01-KA121-VET-000313536</p>
-  <p>Stronę wykonali: <a href="#" target="_blank" rel="noopener">Patryk Śliż</a> · <a href="#" target="_blank" rel="noopener">Łukasz Nowak</a> · <a href="#" target="_blank" rel="noopener">Bartosz Kliś</a></p>
+  <!-- UCZNIOWIE AUTOMATYKA -->
+  <section class="section-padding bg-light" aria-labelledby="aut-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag tag-blue">Kierunek</span>
+        <h2 id="aut-heading">Uczniowie Automatyki</h2>
+        <p>Technik automatyk · 6 uczestników</p>
+      </div>
+      <div class="pcard-grid">
+        <article class="pcard reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Dawid Woźny" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Dawid Woźny</strong><span>Automatyk kl. 4a</span></div></article>
+        <article class="pcard reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Filip Winiewski" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Filip Winiewski</strong><span>Automatyk kl. 4a</span></div></article>
+        <article class="pcard reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Zuzanna Siekaniec" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Zuzanna Siekaniec</strong><span>Automatyk kl. 4a</span></div></article>
+        <article class="pcard reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Bartosz Kliś" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Bartosz Kliś</strong><span>Automatyk kl. 4a</span></div></article>
+        <article class="pcard reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Maciej Bogusz" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Maciej Bogusz</strong><span>Automatyk kl. 4b</span></div></article>
+        <article class="pcard reveal"><div class="pcard-img"><img src="zdjecia-erasumus/.jpeg" alt="Michał Bąkowski" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.pcard-fallback').style.display='flex'"><div class="pcard-fallback" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div><div class="pcard-info"><strong>Michał Bąkowski</strong><span>Automatyk kl. 4b</span></div></article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>Projekt Erasmus Manavgat 2026 · Praktyki zawodowe 12.04–2.05.2026, nr 2025-1-PL01-KA121-VET-000313536</p>
+  <p>Stronę wykonali <a href="" target="_blank" rel="noopener">Patryk Śliż</a> · <a href="" target="_blank" rel="noopener">Łukasz Nowak</a> · <a href="" target="_blank" rel="noopener">Bartosz Kliś</a></p>
 </footer>
 
-  <script>
-    (function(){
-      const ham = document.querySelector('.nav-hamburger'),
-            mob = document.getElementById('mobile-menu');
-      if(ham && mob) ham.addEventListener('click', () => {
-        const o = ham.getAttribute('aria-expanded') === 'true';
-        ham.setAttribute('aria-expanded', String(!o));
-        mob.classList.toggle('is-open', !o);
-      });
+<script>
+(function(){
+  const ham = document.querySelector('.nav-hamburger'),
+        mob = document.getElementById('mobile-menu');
+  if(ham && mob) ham.addEventListener('click', () => {
+    const o = ham.getAttribute('aria-expanded') === 'true';
+    ham.setAttribute('aria-expanded', String(!o));
+    mob.classList.toggle('is-open', !o);
+  });
 
-      document.querySelectorAll('.has-dropdown').forEach(item => {
-        const btn = item.querySelector('.nav-dropdown-btn'),
-              menu = item.querySelector('.dropdown-menu');
-        if(!btn || !menu) return;
-        btn.addEventListener('click', e => {
-          e.stopPropagation();
-          const o = btn.getAttribute('aria-expanded') === 'true';
-          btn.setAttribute('aria-expanded', String(!o));
-          menu.classList.toggle('is-open', !o);
-        });
-        document.addEventListener('click', () => {
-          btn.setAttribute('aria-expanded','false');
-          menu.classList.remove('is-open');
-        });
-      });
+ 
 
-      document.querySelectorAll('.mobile-dropdown-btn').forEach(btn => {
-        const sub = btn.nextElementSibling;
-        if(!sub) return;
-        btn.addEventListener('click', () => {
-          const o = btn.getAttribute('aria-expanded') === 'true';
-          btn.setAttribute('aria-expanded', String(!o));
-          sub.classList.toggle('is-open', !o);
-        });
-      });
 
-      const obs = new IntersectionObserver(entries => entries.forEach(e => {
-        if(e.isIntersecting){ e.target.classList.add('is-visible'); obs.unobserve(e.target); }
-      }), {threshold: 0.1});
-      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-      const cObs = new IntersectionObserver(entries => entries.forEach(e => {
-        if(!e.isIntersecting) return;
-        const el = e.target, target = parseInt(el.dataset.count);
-        let s = 0;
-        const step = Math.ceil(1200/target);
-        const tmr = setInterval(() => { el.textContent = s; if(s >= target){ clearInterval(tmr); } s++; }, step);
-        cObs.unobserve(el);
-      }), {threshold: 0.5});
-      document.querySelectorAll('[data-count]').forEach(el => cObs.observe(el));
-    })();
-  </script>
-  <script src="js/main.js"></script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){ e.target.classList.add('is-visible'); obs.unobserve(e.target); }
+    });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  const cObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(!e.isIntersecting) return;
+      const el = e.target, target = parseInt(el.dataset.count);
+      let s = 0;
+      const step = Math.ceil(1200/target);
+      const tmr = setInterval(() => {
+        el.textContent = s;
+        if(s >= target){ clearInterval(tmr); }
+        s++;
+      }, step);
+      cObs.unobserve(el);
+    });
+  }, {threshold: 0.5});
+  document.querySelectorAll('[data-count]').forEach(el => cObs.observe(el));
+})();
+</script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
