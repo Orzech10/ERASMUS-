@@ -1609,3 +1609,40 @@ body.a11y-underline a { text-decoration: underline !important; }
 body.a11y-readable,
 body.a11y-readable * { font-family: Arial, sans-serif !important; letter-spacing: 0.05em !important; }
 
+/* MAPA */
+.map-wrap {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.map-card {
+  border-radius: var(--r-2xl) var(--r-2xl) 0 0;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,48,73,0.12);
+  border: 2px solid var(--border);
+  border-bottom: none;
+}
+.map-info-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  background: var(--navy-dark);
+  padding: 1.1rem 1.5rem;
+  border-radius: 0 0 var(--r-2xl) var(--r-2xl);
+  border: 2px solid var(--navy-dark);
+}
+.map-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: var(--text-sm);
+  color: rgba(253,240,213,0.82);
+  flex-shrink: 0;
+}
+.map-info-item svg { color: var(--blue); flex-shrink: 0; }
+.map-btn { margin-left: auto; flex-shrink: 0; }
+@media (max-width: 640px) {
+  .map-btn { margin-left: 0; width: 100%; justify-content: center; }
+}
