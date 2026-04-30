@@ -78,9 +78,15 @@
           odkrywanie najciekawszych miejsc w regionie Manavgat i Antalya.</p>
         </div>
         <div class="page-hero-img">
-          <button class="hero-image-btn act-trigger" type="button" aria-label="Powiększ zdjęcie główne">
-            <img src="zdjecia-erasumus/wycieczki/gory.jpeg" alt="Widok górski podczas wycieczki" class="hero-activity-photo" />
-          </button>
+          <div class="group-photo-wrap" style="border-radius: var(--r-2xl); overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.20), 0 20px 52px rgba(0,0,0,0.38); border: 3px solid rgba(253,240,213,0.18); width: 115%; margin-left: -7.5%;">
+            <img
+              src="zdjecia-erasumus/wycieczki/gory.jpeg"
+              alt="Widok górski podczas wycieczki"
+              class="group-photo"
+              loading="eager"
+              onerror="this.style.display='none'"
+            />
+          </div>
         </div>
       </div>
     </section>
