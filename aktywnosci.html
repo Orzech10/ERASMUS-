@@ -356,194 +356,121 @@
 
   <script src="js/main.js"></script>
 
-  <!-- ======================================================
-       LIGHTBOX v2 – samodzielny, bez zależności
-       ====================================================== -->
-  <div id="lb-overlay" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia" aria-hidden="true" style="
-    display:none;
-    position:fixed;
-    inset:0;
-    z-index:99999;
-    background:rgba(0,0,0,0.92);
-    backdrop-filter:blur(8px);
-    align-items:center;
-    justify-content:center;
-    padding:1.5rem;
-    box-sizing:border-box;
-  ">
-    <!-- zamknij klikając tło -->
+  <!-- LIGHTBOX v3 -->
+  <div id="lb-overlay" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia" aria-hidden="true" style="display:none;position:fixed;inset:0;z-index:999999;background:rgba(0,0,0,0.92);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:1.5rem;box-sizing:border-box;">
     <div id="lb-backdrop" style="position:absolute;inset:0;cursor:pointer;"></div>
-
-    <div id="lb-box" style="
-      position:relative;
-      z-index:1;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      width:min(100%, 1100px);
-      max-height:90vh;
-      gap:0.6rem;
-    ">
-      <!-- główny obraz -->
-      <img id="lb-img" src="" alt="" style="
-        display:block;
-        max-width:100%;
-        max-height:74vh;
-        width:auto;
-        height:auto;
-        object-fit:contain;
-        border-radius:12px;
-        box-shadow:0 20px 60px rgba(0,0,0,0.5);
-        transition:opacity 0.18s ease;
-      " />
-
-      <!-- pasek: podpis + licznik -->
+    <div id="lb-box" style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;width:min(100%,1100px);max-height:90vh;gap:0.6rem;">
+      <img id="lb-img" src="" alt="" style="display:block !important;max-width:100% !important;max-height:74vh !important;width:auto !important;height:auto !important;object-fit:contain !important;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.5);opacity:1 !important;visibility:visible !important;transform:none !important;" />
       <div style="display:flex;justify-content:space-between;align-items:center;width:100%;padding:0 2px;">
         <span id="lb-cap" style="font-size:0.9rem;color:rgba(255,255,255,0.7);"></span>
         <span id="lb-count" style="font-size:0.85rem;color:rgba(255,255,255,0.45);white-space:nowrap;"></span>
       </div>
-
-      <!-- miniatury -->
-      <div id="lb-thumbs" style="
-        display:flex;
-        gap:5px;
-        overflow-x:auto;
-        width:100%;
-        padding-bottom:2px;
-        scrollbar-width:thin;
-        scrollbar-color:rgba(255,255,255,0.25) transparent;
-      "></div>
+      <div id="lb-thumbs" style="display:flex;gap:5px;overflow-x:auto;width:100%;padding-bottom:2px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0.25) transparent;"></div>
     </div>
-
-    <!-- strzałki -->
-    <button id="lb-prev" aria-label="Poprzednie" style="
-      position:fixed;left:1rem;top:50%;transform:translateY(-50%);
-      width:50px;height:50px;border-radius:50%;border:none;
-      background:rgba(255,255,255,0.9);color:#780000;
-      font-size:1.5rem;font-weight:700;cursor:pointer;z-index:2;
-      display:flex;align-items:center;justify-content:center;
-      box-shadow:0 8px 20px rgba(0,0,0,0.25);
-    ">&#10094;</button>
-    <button id="lb-next" aria-label="Następne" style="
-      position:fixed;right:1rem;top:50%;transform:translateY(-50%);
-      width:50px;height:50px;border-radius:50%;border:none;
-      background:rgba(255,255,255,0.9);color:#780000;
-      font-size:1.5rem;font-weight:700;cursor:pointer;z-index:2;
-      display:flex;align-items:center;justify-content:center;
-      box-shadow:0 8px 20px rgba(0,0,0,0.25);
-    ">&#10095;</button>
-    <button id="lb-close" aria-label="Zamknij" style="
-      position:fixed;top:1rem;right:1rem;
-      width:44px;height:44px;border-radius:50%;border:none;
-      background:#fff;color:#780000;
-      font-size:1.5rem;font-weight:700;cursor:pointer;z-index:2;
-      display:flex;align-items:center;justify-content:center;
-      box-shadow:0 8px 20px rgba(0,0,0,0.25);
-    ">&times;</button>
+    <button id="lb-prev" aria-label="Poprzednie" style="position:fixed;left:1rem;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;border:none;background:rgba(255,255,255,0.9);color:#780000;font-size:1.5rem;font-weight:700;cursor:pointer;z-index:999999;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,0.25);">&#10094;</button>
+    <button id="lb-next" aria-label="Następne" style="position:fixed;right:1rem;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;border:none;background:rgba(255,255,255,0.9);color:#780000;font-size:1.5rem;font-weight:700;cursor:pointer;z-index:999999;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,0.25);">&#10095;</button>
+    <button id="lb-close" aria-label="Zamknij" style="position:fixed;top:1rem;right:1rem;width:44px;height:44px;border-radius:50%;border:none;background:#fff;color:#780000;font-size:1.5rem;font-weight:700;cursor:pointer;z-index:999999;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,0.25);">&times;</button>
   </div>
 
   <script>
   (function () {
     'use strict';
+    var ov  = document.getElementById('lb-overlay');
+    var img = document.getElementById('lb-img');
+    var cap = document.getElementById('lb-cap');
+    var cnt = document.getElementById('lb-count');
+    var thr = document.getElementById('lb-thumbs');
+    var btnP = document.getElementById('lb-prev');
+    var btnN = document.getElementById('lb-next');
+    var btnC = document.getElementById('lb-close');
+    var bd   = document.getElementById('lb-backdrop');
 
-    var overlay  = document.getElementById('lb-overlay');
-    var img      = document.getElementById('lb-img');
-    var cap      = document.getElementById('lb-cap');
-    var count    = document.getElementById('lb-count');
-    var thumbs   = document.getElementById('lb-thumbs');
-    var btnPrev  = document.getElementById('lb-prev');
-    var btnNext  = document.getElementById('lb-next');
-    var btnClose = document.getElementById('lb-close');
-    var backdrop = document.getElementById('lb-backdrop');
+    var items = [], cur = 0, lastFocus = null;
 
-    var items    = [];
-    var cur      = 0;
-    var lastFocus = null;
-
-    function open(group, clickedBtn) {
-      /* zbierz wszystkie przyciski z tej samej grupy */
-      var btns = Array.from(document.querySelectorAll('[data-lb-group="' + group + '"]'));
-      items = btns.map(function(b) {
-        return { src: b.getAttribute('data-lb-src'), alt: b.getAttribute('data-lb-alt') || '' };
-      });
-      cur = btns.indexOf(clickedBtn);
-      if (cur < 0) cur = 0;
-      lastFocus = clickedBtn;
-
-      /* miniatury */
-      thumbs.innerHTML = items.map(function(item, i) {
-        return '<button data-i="' + i + '" style="'
-          + 'flex-shrink:0;width:62px;height:44px;border:2px solid transparent;'
-          + 'border-radius:5px;overflow:hidden;padding:0;background:none;cursor:pointer;">'
-          + '<img src="' + item.src + '" alt="' + item.alt + '" loading="lazy" '
-          + 'style="width:100%;height:100%;object-fit:cover;display:block;">'
-          + '</button>';
-      }).join('');
-
-      overlay.style.display = 'flex';
-      overlay.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-      show(cur);
-      btnClose.focus();
+    /* Wymusza style na img – neutralizuje main.js reveal/animate */
+    function forceImgStyle() {
+      img.removeAttribute('class');
+      img.style.cssText = 'display:block !important;max-width:100% !important;max-height:74vh !important;'
+        + 'width:auto !important;height:auto !important;object-fit:contain !important;'
+        + 'border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.5);'
+        + 'opacity:1 !important;visibility:visible !important;transform:none !important;';
     }
 
     function show(i) {
       cur = i;
       var item = items[i];
-      img.style.opacity = '0';
-      var tmp = new Image();
-      tmp.onload = tmp.onerror = function() {
-        img.src = item.src;
-        img.alt = item.alt;
-        img.style.opacity = '1';
-      };
-      tmp.src = item.src;
-      cap.textContent   = item.alt;
-      count.textContent = (i + 1) + ' / ' + items.length;
-
-      /* zaznacz aktywną miniaturę */
-      Array.from(thumbs.children).forEach(function(tb, idx) {
-        tb.style.borderColor = (idx === i) ? '#ffffff' : 'transparent';
-        if (idx === i) tb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      img.src = item.src;
+      img.alt = item.alt || '';
+      forceImgStyle();
+      cap.textContent = item.alt || '';
+      cnt.textContent = items.length > 1 ? (i + 1) + ' / ' + items.length : '';
+      Array.from(thr.children).forEach(function(tb, idx) {
+        tb.style.borderColor = idx === i ? '#fff' : 'transparent';
+        if (idx === i) tb.scrollIntoView({ behavior:'smooth', block:'nearest', inline:'center' });
       });
     }
 
+    function openWith(newItems, startIdx, trigger) {
+      items = newItems;
+      cur = Math.max(0, Math.min(startIdx, items.length - 1));
+      lastFocus = trigger || null;
+      thr.innerHTML = items.map(function(item, i) {
+        return '<button data-i="' + i + '" style="flex-shrink:0;width:62px;height:44px;border:2px solid transparent;border-radius:5px;overflow:hidden;padding:0;background:none;cursor:pointer;">'
+          + '<img src="' + item.src + '" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;opacity:1!important;visibility:visible!important;transform:none!important;">'
+          + '</button>';
+      }).join('');
+      ov.style.display = 'flex';
+      ov.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      show(cur);
+      btnC.focus();
+    }
+
     function close() {
-      overlay.style.display = 'none';
-      overlay.setAttribute('aria-hidden', 'true');
+      ov.style.display = 'none';
+      ov.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
       img.src = '';
       if (lastFocus) lastFocus.focus();
     }
 
-    /* kliknięcie na dowolny przycisk z data-lb-group */
     document.addEventListener('click', function(e) {
-      var btn = e.target.closest('[data-lb-group]');
-      if (btn) {
-        e.preventDefault();
-        e.stopPropagation();
-        open(btn.getAttribute('data-lb-group'), btn);
+      var tb = e.target.closest('#lb-thumbs [data-i]');
+      if (tb) { show(parseInt(tb.getAttribute('data-i'), 10)); return; }
+
+      var btnG = e.target.closest('[data-lb-group]');
+      if (btnG) {
+        e.preventDefault(); e.stopPropagation();
+        var grp  = btnG.getAttribute('data-lb-group');
+        var btns = Array.from(document.querySelectorAll('[data-lb-group="' + grp + '"]'));
+        openWith(btns.map(function(b){ return { src: b.getAttribute('data-lb-src'), alt: b.getAttribute('data-lb-alt')||'' }; }), btns.indexOf(btnG), btnG);
         return;
       }
-      /* miniatura */
-      var tb = e.target.closest('[data-i]');
-      if (tb && thumbs.contains(tb)) {
-        show(parseInt(tb.getAttribute('data-i'), 10));
+
+      var btnI = e.target.closest('[data-images]');
+      if (btnI) {
+        e.preventDefault(); e.stopPropagation();
+        var srcs = [];
+        try { srcs = JSON.parse(btnI.getAttribute('data-images') || '[]'); } catch(x) {}
+        if (!srcs.length) {
+          var fi = btnI.querySelector('img');
+          if (fi) srcs = [fi.getAttribute('src')];
+        }
+        openWith(srcs.map(function(s){ return { src: s, alt: '' }; }), 0, btnI);
+        return;
       }
     });
 
-    backdrop.addEventListener('click', close);
-    btnClose.addEventListener('click', close);
-    btnPrev.addEventListener('click', function() { show((cur - 1 + items.length) % items.length); });
-    btnNext.addEventListener('click', function() { show((cur + 1) % items.length); });
-
+    bd.addEventListener('click', close);
+    btnC.addEventListener('click', close);
+    btnP.addEventListener('click', function(){ show((cur - 1 + items.length) % items.length); });
+    btnN.addEventListener('click', function(){ show((cur + 1) % items.length); });
     document.addEventListener('keydown', function(e) {
-      if (overlay.style.display === 'none') return;
+      if (ov.style.display === 'none') return;
       if (e.key === 'Escape')     close();
       if (e.key === 'ArrowRight') show((cur + 1) % items.length);
       if (e.key === 'ArrowLeft')  show((cur - 1 + items.length) % items.length);
     });
-
   })();
   </script>
 
