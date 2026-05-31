@@ -1236,7 +1236,7 @@ button{cursor:pointer;background:none;border:none}
 
 .firma-content p {
   margin: 0 0 0.8rem 0;
-  color: var(--text, #003049);
+  color: #000;
   line-height: 1.75;
   font-size: 0.96rem;
 }
