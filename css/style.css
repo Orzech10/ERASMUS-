@@ -131,7 +131,9 @@ button{cursor:pointer;background:none;border:none}
 @media(max-width:768px){.nav-links{display:none}.nav-hamburger{display:flex}}
 
 /* HERO */
-.hero{position:relative;background:var(--navy-dark);overflow:hidden}
+.hero{
+  background: url("../zdjecia-erasumus/czas_wolny/wyjsciaside/sideznak.jpeg") center/cover no-repeat !important;
+}
 .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(var(--s8),6vw,var(--s20));align-items:center;padding-block:clamp(var(--s12),8vw,var(--s20))}
 .hero-text .section-tag{background:rgba(253,240,213,0.12);color:#FDF0D5}
 .hero-text h1{font-size:var(--text-3xl);color:#FDF0D5;margin-bottom:var(--s4)}
