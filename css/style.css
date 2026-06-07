@@ -1595,8 +1595,8 @@ button{cursor:pointer;background:none;border:none}
 .a11y-btn--reset:hover { background: none; color: var(--red); }
 
 /* Efekty dostępności */
-body.a11y-grayscale { filter: grayscale(100%); }
-body.a11y-negative { filter: invert(100%) hue-rotate(180deg); }
+/* a11y-grayscale removed */
+/* a11y-negative removed */
 body.a11y-high-contrast {
   --text: #000; --bg: #fff;
   --text-muted: #111; --border: #000;
